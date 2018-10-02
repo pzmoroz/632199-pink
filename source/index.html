@@ -5,8 +5,133 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Мир в розовом цвете">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Мир в розовом цвете</h1>
+      <section class="download">
+        <h2 class="visually-hidden">Скачать приложение</h2>
+        <ul class="download__source source-list">
+          <li class="source-list__item source-list__item--apple">
+            <a>Apple</a>
+          </li>
+          <li class="source-list__item source-list__item--android">
+            <a>Android</a>
+          </li>
+          <li class="source-list__item source-list__item--windows">
+            <a>Windows</a>
+          </li>
+        </ul>
+        <p class="download__description">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="main-features">
+        <h2 class="visually-hidden">Информация программе</h2>
+        <header class="main-features__header question-answer">
+          <p class="question-answer__question">Устали от серости мегаполиса?</p>
+          <p class="question-answer__answer">Нам есть, что вам предложить!</p>
+        </header>
+        <ul class="main-features-list features-list">
+          <li class="features-list__item feature">
+            <h3 class="feature__title">Поднимает настроение</h3>
+            <p class="feature__description">Приложение позволит вам победить осеннюю</p>
+          </li>
+          <li class="features-list__item feature">
+            <h3 class="feature__title">Меняет мир вокруг</h3>
+            <p class="feature__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features-list__item feature">
+            <h3 class="feature__title">Заводит новых друзей</h3>
+            <p class="feature__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img class="main-features__demo" src="img/iphone-screen.jpg" alt="Пример работы приложения" width="279px" height="493px">
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__author">Николай Петров</h3>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--active" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="price">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="price__wrapper slider">
+          <table class="price__list slider__list">
+            <tr>
+              <th>Название тарифа</th>
+              <th>Цена</th>
+              <th>Валюта</th>
+              <th>Популярность</th>
+              <th>Розовый фильтр</th>
+              <th>Смайлики</th>
+              <th>Комментарии</th>
+            </tr>>
+            <tr class="price__item slider__item">
+              <td class="price__name">Стандарт</td>
+              <td class="price__value">3.99</td>
+              <td class="price__currency">USD</td>
+              <td class="price__type">Хит</td>
+              <td class="price__filter price__option price__option--true">есть</td>
+              <td class="price__smiles price__option price__option--true">есть</td>
+              <td class="price__comments price__option price__option--false">нет</td>
+            </tr>
+          </table>
+          <p class="price__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--active" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <ul class="contacts__interactions interaction-list">
+          <li class="interaction-list__item interaction">
+            <p class="interaction__type">Звоните:</p>
+            <p class="interaction__detail">+7(812)555-66-66</p>
+          </li>
+          <li class="interaction-list__item interaction">
+            <p class="interaction__type">Пишите:</p>
+            <p class="interaction__detail">mail@htmlacademy.ru</p>
+          </li>
+          <li class="interaction-list__item interaction">
+            <p class="interaction__type">Приезжайте в гости:</p>
+            <p class="interaction__detail">ул. Большая Конюшенная, 19/8 </p>
+          </li>
+        </ul>
+        <img class="contacts_map" alt="расположение" width="320" height="645">
+      </section>
+    </main>
   </body>
 </html>
