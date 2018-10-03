@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Мир в розовом цвете">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <header class="main-header">
+        <h1 class="main-header__title">Фотографии пользователей</h1>
+        <!--Наверно лучше сделать фоном  <img class="main-header__image" alt="">!-->
+      </header>
+      <section class="gallery">
+        <header class="gallery__header">
+          <h2 class="gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+        </header>
+        <ul class="gallery__list">
+          <li class="gallery__list-item gallery-photo">
+            <img class="gallery-photo__image gallery-photo__image--panorama gallery-photo__image--panorama-of-the-day" src="./img/panorama.jpg" alt="панорама" width="320" height="137">
+            <div class="gallery-photo__wrapper">
+              <p class="gallery-photo__autor">Анна</p>
+              <p class="gallery-photo__time-ago">(5 минут назад)</p>
+              <p class="gallery-photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="gallery-photo__like like-block">
+                <button class="like-block__button">Мне нравится!</button>
+                <p class="like-block__counter">Нравится: 215</p>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__list-item gallery-photo">
+            <img class="gallery-photo__image" src="./img/car.jpg" alt="машина" width="280" height="180">
+            <div class="gallery-photo__wrapper">
+              <p class="gallery-photo__autor">Левон</p>
+              <p class="gallery-photo__time-ago">(5 часов назад)</p>
+              <p class="gallery-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="gallery-photo__like like-block">
+                <button class="like-block__button">Мне нравится!</button>
+                <p class="like-block__counter">Нравится: 356</p>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__list-item gallery-photo">
+            <img class="gallery-photo__image" src="./img/drams.jpg" alt="барабаны" width="280" height="180">
+            <div class="gallery-photo__wrapper">
+              <p class="gallery-photo__autor">Антон</p>
+              <p class="gallery-photo__time-ago">(12 часов назад)</p>
+              <p class="gallery-photo__description">Соседи будут рады!</p>
+              <div class="gallery-photo__like like-block">
+                <button class="like-block__button">Мне нравится!</button>
+                <p class="like-block__counter">Нравится: 666</p>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__list-item gallery-photo">
+            <img class="gallery-photo__image" src="./img/building.jpg" alt="небоскреб" width="280" height="180">
+            <div class="gallery-photo__wrapper">
+              <p class="gallery-photo__autor">Борис</p>
+              <p class="gallery-photo__time-ago">(20 часов назад)</p>
+              <p class="gallery-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="gallery-photo__like like-block">
+                <button class="like-block__button">Мне нравится!</button>
+                <p class="like-block__counter">Нравится: 215</p>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__list-item gallery-photo">
+            <img class="gallery-photo__image" src="./img/kuban.jpg" alt="кубанская бахча" width="280" height="180">
+            <div class="gallery-photo__wrapper">
+              <p class="gallery-photo__autor">Сергей</p>
+              <p class="gallery-photo__time-ago">(25 часов назад)</p>
+              <p class="gallery-photo__description">Самая кубанская в мире!</p>
+              <div class="gallery-photo__like like-block">
+                <button class="like-block__button">Мне нравится!</button>
+                <p class="like-block__counter">Нравится: 4</p>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__list-item gallery-photo">
+            <img class="gallery-photo__image" src="./img/legs.jpg" alt="ноги" width="280" height="180">
+            <div class="gallery-photo__wrapper">
+              <p class="gallery-photo__autor">Максим</p>
+              <p class="gallery-photo__time-ago">(40 часов назад)</p>
+              <p class="gallery-photo__description">Где снег-то?</p>
+              <div class="gallery-photo__like like-block">
+                <button class="like-block__button">Мне нравится!</button>
+                <p class="like-block__counter">Нравится: 150</p>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__list-item gallery-photo">
+            <img class="gallery-photo__image" src="./img/plane.jpg" alt="самолет" width="280" height="180">
+            <div class="gallery-photo__wrapper">
+              <p class="gallery-photo__autor">Надежда</p>
+              <p class="gallery-photo__time-ago">(45 часов назад)</p>
+              <p class="gallery-photo__description">Всем GM и взаимные лайки!</p>
+              <div class="gallery-photo__like like-block">
+                <button class="like-block__button">Мне нравится!</button>
+                <p class="like-block__counter">Нравится: 2560</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="upload">
+        <header class="upload-header">
+          <h2 class="upload-header__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        </header>
+        <img class="upload__image" alt="загруженное фото" src="./img/winter.jpg" width="280" height="384">
+        <ul class="upload__action-list">
+          <li class="upload__action-item">
+            <button class="upload__action upload__action--active upload__action--resize">Изменить размер</button>
+          </li>
+          <li class="upload__action-item">
+            <button class="upload__action upload__action--color">Изменить цвет</button>
+          </li>
+          <li class="upload__action-item">
+            <button class="upload__action upload__action--brightness">Изменить яркость</button>
+          </li>
+        </ul>
+        <div class="upload__action-slider"></div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <a class="social__logo">Pink</a>
+        <ul class="social__list">
+          <li class="social__list-item">
+            <a class="social__link social__link--twitter" href="twiiter.com">Twitter</a>
+          </li>
+          <li class="social__list-item">
+            <a class="social__link social__link--facebook" href="facebook.com">Facebook</a>
+          </li>
+          <li class="social__list-item">
+            <a class="social__list-link social__list-item--youtube" href="youtube.com">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
