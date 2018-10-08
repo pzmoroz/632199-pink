@@ -3,44 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
       </a>
-      <nav class="main-nav">
+      <nav class="page-header__navigation main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item main-nav__list-item--active">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Мир в розовом цвете</h1>
       <section class="download">
         <h2 class="visually-hidden">Скачать приложение</h2>
-        <ul class="download__source source-list">
-          <li class="source-list__item source-list__item--apple">
+        <ul class="download__list">
+          <li class="download__list-item download__list-item--apple">
             <a>Apple</a>
           </li>
-          <li class="source-list__item source-list__item--android">
+          <li class="download__list-item download__list-item--android">
             <a>Android</a>
           </li>
-          <li class="source-list__item source-list__item--windows">
+          <li class="download__list-item download__list-item--windows">
             <a>Windows</a>
           </li>
         </ul>
