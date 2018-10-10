@@ -1,3 +1,15 @@
 .download {
-  background-color: #1d2631;
+  background: $color-header url("./../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.download__slogan {
+  font-family: OpenSans;
+  font-size: 40px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color-font-main-light;
 }
