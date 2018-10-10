@@ -1,11 +1,9 @@
-.reviews {
-  background-color: $color-background-main;
-}
-
-.reviews__author {
+.feature__title {
   @include font(18px, $color-font-main-darkest, bold);
+  line-height: 1.71;
 }
 
-.reviews__text {
+.feature__description {
   @include font(14px, $color-font-main-dark, normal);
+  line-height: 1.71;
 }

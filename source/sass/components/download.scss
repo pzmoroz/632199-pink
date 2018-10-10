@@ -1,15 +1,34 @@
 .download {
-  background: $color-header url("./../img/bg-back-mobile@1x.jpg") no-repeat;
+  background: $color-header url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-size: 100% 100%;
 }
 
 .download__slogan {
-  font-family: OpenSans;
-  font-size: 40px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: $color-font-main-light;
+  @include font(40px, $color-font-main-light);
+}
+
+.download__link {
+  @include font(18px, $color-font-main-light, bold);
+}
+
+.download__list-item {
+  width: 56px;
+  height: 56px;
+  &--apple {
+    background-image: url("../img/logo-apple.svg");
+  };
+
+  &--android {
+    background-image: url("../img/logo-android.svg");
+  };
+
+  &--windows {
+    background-image: url("../img/logo-microsoft.svg");
+  };
+}
+
+.download__description {
+  @include font(14px, $color-font-main-light, normal);
+  line-height: 1.71;
+  text-align: center;
 }
