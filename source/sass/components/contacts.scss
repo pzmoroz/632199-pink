@@ -1,0 +1,15 @@
+.contacts {
+  background-color: $color-background-main;
+}
+
+.contacts__title {
+  @include font(24px, $color-font-main-dark, normal);
+}
+
+.contacts__label {
+  @include font(18px, $color-font-main-darkest, bold);
+}
+
+.contacts__data {
+  @include font(24px, $color-font-red, normal);
+}
