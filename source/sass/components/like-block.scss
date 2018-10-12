@@ -3,6 +3,6 @@
 }
 
 .like-block__counter {
-  @include font(12px, $color-font-main-red, normal);
+  @include font(12px, $color-font-red, normal);
   line-height: 2;
 }

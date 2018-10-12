@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -39,7 +39,7 @@
         </header>
         <ul class="gallery__list">
           <li class="gallery__list-item gallery-photo">
-            <img class="gallery-photo__image gallery-photo__image--panorama gallery-photo__image--panorama-of-the-day" src="http://placehold.it/320x137" alt="панорама" width="320" height="137">
+            <img class="gallery-photo__image gallery-photo__image--panorama gallery-photo__image--panorama-of-the-day" src="img/panorama-mobile@1x.jpg" alt="панорама" width="320" height="137">
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Анна</p>
               <p class="gallery-photo__time-ago">(5 минут назад)</p>
@@ -51,7 +51,7 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <img class="gallery-photo__image" src="http://placehold.it/280x180" alt="машина" width="280" height="180">
+            <img class="gallery-photo__image" src="img/photo-car-mobile@1x.jpg" alt="машина" width="280" height="180">
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Левон</p>
               <p class="gallery-photo__time-ago">(5 часов назад)</p>
@@ -63,7 +63,7 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <img class="gallery-photo__image" src="http://placehold.it/280x180" alt="барабаны" width="280" height="180">
+            <img class="gallery-photo__image" src="img/photo-drumset-mobile@1x.jpg" alt="барабаны" width="280" height="180">
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Антон</p>
               <p class="gallery-photo__time-ago">(12 часов назад)</p>
@@ -75,7 +75,7 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <img class="gallery-photo__image" src="http://placehold.it/280x180" alt="небоскреб" width="280" height="180">
+            <img class="gallery-photo__image" src="img/photo-window-mobile@1x.jpg" alt="небоскреб" width="280" height="180">
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Борис</p>
               <p class="gallery-photo__time-ago">(20 часов назад)</p>
@@ -87,7 +87,7 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <img class="gallery-photo__image" src="http://placehold.it/280x180" alt="кубанская бахча" width="280" height="180">
+            <img class="gallery-photo__image" src="img/photo-fair-mobile@1x.jpg" alt="кубанская бахча" width="280" height="180">
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Сергей</p>
               <p class="gallery-photo__time-ago">(25 часов назад)</p>
@@ -99,7 +99,7 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <img class="gallery-photo__image" src="http://placehold.it/280x180" alt="ноги" width="280" height="180">
+            <img class="gallery-photo__image" src="img/photo-pov-mobile@1x.jpg" alt="ноги" width="280" height="180">
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Максим</p>
               <p class="gallery-photo__time-ago">(40 часов назад)</p>
@@ -111,7 +111,7 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <img class="gallery-photo__image" src="http://placehold.it/280x180" alt="самолет" width="280" height="180">
+            <img class="gallery-photo__image" src="img/photo-wing-mobile@1x.jpg" alt="самолет" width="280" height="180">
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Надежда</p>
               <p class="gallery-photo__time-ago">(45 часов назад)</p>
@@ -125,10 +125,10 @@
         </ul>
       </section>
       <section class="upload">
-        <header class="upload-header">
-          <h2 class="upload-header__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        <header class="upload__header">
+          <h2 class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
         </header>
-        <img class="upload__image" alt="загруженное фото" src="http://placehold.it/280x384" width="280" height="384">
+        <img class="upload__image" alt="загруженное фото" src="img/photo-road-mobile@1x.jpg" width="280" height="384">
         <ul class="upload__action-list">
           <li class="upload__action-item">
             <button class="upload__action upload__action--active upload__action--resize">Изменить размер</button>
@@ -145,7 +145,9 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__social social">
-        <a class="social__logo">Pink</a>
+        <a class="social__logo">
+          <img class="social__logo-image" src="img/logo-pink-white-mobile.svg" width="147" height="40">
+        </a>
         <ul class="social__list">
           <li class="social__list-item">
             <a class="social__link social__link--twitter" href="twiiter.com">Twitter</a>

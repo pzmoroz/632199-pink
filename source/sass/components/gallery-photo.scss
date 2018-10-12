@@ -3,7 +3,7 @@
 }
 
 .gallery-photo__autor {
-  @include font(14px, $color-font-main-darkest, normal);
+  @include font(14px, $color-font-main-darkest, bold);
   line-height: 24px;
 }
 

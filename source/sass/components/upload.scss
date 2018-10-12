@@ -1,0 +1,8 @@
+.upload {
+  background-color: $color-background-secondary;
+}
+
+.upload__title {
+  @include font(14px, $color-font-main-dark, bold);
+  line-height: 2.14;
+}

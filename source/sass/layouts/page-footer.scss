@@ -1,4 +1,8 @@
 .page-footer {
+  opacity: 1;
+}
+
+.page-footer__contacts {
   background-image: url("../img/bg-map-mobile@1x.png");
   background-size: 100% 100%;
   background-color: $color-background-secondary;

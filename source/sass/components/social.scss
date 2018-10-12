@@ -1,0 +1,17 @@
+.social {
+  background-color: $color-background-secondary;
+
+}
+
+
+.social__link {
+  &--twitter {
+    background-image: ulr("../img/icon-twitter.svg");
+  };
+  &--facebook {
+    background-image: ulr("../img/icon--facebook.svg");
+  };
+  &--youtube {
+    background-image: ulr("../img/icon-youtube.svg");
+  };
+}
