@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff") format("woff");
+  }
+
+
+
+@mixin font($font-size, $font-color, $font-weight: normal) {
+  font-family: OpenSans;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $font-color;
+}

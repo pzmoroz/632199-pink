@@ -1,0 +1,8 @@
+.gallery {
+  background-color: $color-background-main;
+}
+
+.gallery__title {
+  @include font(14px, $color-font-main-light, normal);
+  line-height: 2.14;
+}

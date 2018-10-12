@@ -1,0 +1,68 @@
+.form__fio {
+  background-color: $color-background-main;
+}
+
+.form__achievements {
+  background-color: $color-background-secondary;
+}
+
+.form__contact {
+  background-color: $color-background-main;
+}
+
+.form__application {
+  background-color: $color-background-secondary;
+}
+
+.form__title {
+  @include font(14px, $color-font-main-dark, normal);
+  line-height: 2.14;
+
+  &--red {
+    @include font(14px, $color-font-red, normal);
+    line-height: 1.29;
+  }
+}
+
+.form__label {
+  &--for-text {
+    @include font(14px, $color-font-red, normal);
+    line-height: 2.14;
+  };
+
+  &--for-radio,
+  &--for-checkbox {
+    @include font(18px, $color-font-main-dark, normal);
+    line-height: 1.67;
+  };
+}
+
+.form__intput-text {
+  @include font(18px, $color-font-main-dark, normal);
+  line-height: 1.67;
+}
+
+.form__emotion-label {
+  @include font(14px, $color-font-red, normal);
+  line-height: 2.14;
+}
+
+.form__emotion-text {
+  @include font(18px, $color-font-main-dark, normal);
+  line-height: 1.67;
+}
+
+.form__buttom {
+  background-color: $color-green;
+  @include font(14px, $color-font-main-light, bold);
+  line-height: 1.67;
+}
+
+.form__hint {
+  @include font(14px, $color-font-main-dark, normal);
+  line-height: 2.14;
+}
+
+.form__asterix {
+  @include font(14px, $color-font-red, normal);
+}

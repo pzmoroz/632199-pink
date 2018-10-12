@@ -1,0 +1,22 @@
+ .main-nav {
+  background-color: #283645;
+  a {
+    text-decoration: none;
+  }
+}
+
+
+.main-nav__toggle {
+  // width: 24px;
+  // height: 23px;
+  background-image: url("./../../img/icon-menu-cross.svg")
+}
+
+.main-nav__list-item {
+  a {
+    @include font(18px, $color-font-main-light, bold);
+    text-transform: uppercase;
+    line-height: 1.78;
+  }
+  text-align: center;
+}

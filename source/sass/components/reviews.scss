@@ -1,0 +1,11 @@
+.reviews {
+  background-color: $color-background-main;
+}
+
+.reviews__author {
+  @include font(18px, $color-font-main-darkest, bold);
+}
+
+.reviews__text {
+  @include font(14px, $color-font-main-dark, normal);
+}

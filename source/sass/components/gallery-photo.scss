@@ -1,0 +1,18 @@
+.gallery-photo {
+  background-color: $color-background-secondary;
+}
+
+.gallery-photo__autor {
+  @include font(14px, $color-font-main-darkest, bold);
+  line-height: 24px;
+}
+
+.gallery-photo__time-ago {
+  @include font(12px, $color-font-main-dark, normal);
+  line-height: 24px;
+}
+
+.gallery-photo__description {
+  @include font(14px, $color-font-main-dark, normal);
+  line-height: 24px;
+}

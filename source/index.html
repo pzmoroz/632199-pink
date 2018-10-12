@@ -3,48 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
       </a>
-      <nav class="main-nav">
+      <nav class="page-header__navigation main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item main-nav__list-item--active">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Мир в розовом цвете</h1>
       <section class="download">
-        <h2 class="visually-hidden">Скачать приложение</h2>
-        <ul class="download__source source-list">
-          <li class="source-list__item source-list__item--apple">
-            <a>Apple</a>
-          </li>
-          <li class="source-list__item source-list__item--android">
-            <a>Android</a>
-          </li>
-          <li class="source-list__item source-list__item--windows">
-            <a>Windows</a>
-          </li>
-        </ul>
-        <p class="download__description">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+        <img class="download__hand" src="./img/iphone-hand-mobile@1x.png" width="320" height="314" alt="рука с телефоном">
+        <div class="download__wrapper">
+          <h2 class="download__slogan">Взгляните на жизнь иначе!</h2>
+          <a class="download__link">
+            <button class="download__link-button">Скачать приложение</button>
+          </a>
+          <ul class="download__list">
+            <li class="download__list-item download__list-item--apple">
+              <a>Apple</a>
+            </li>
+            <li class="download__list-item download__list-item--android">
+              <a>Android</a>
+            </li>
+            <li class="download__list-item download__list-item--windows">
+              <a>Windows</a>
+            </li>
+          </ul>
+          <p class="download__description">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+
       </section>
       <section class="main-features">
         <h2 class="visually-hidden">Информация программе</h2>
@@ -66,7 +72,7 @@
             <p class="feature__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="main-features__demo" src="http://placehold.it/157x320" alt="Пример работы приложения" width="157" height="320">
+        <img class="main-features__demo" src="img/iphone-screen-mobile@1x.png" alt="Пример работы приложения" width="157" height="320">
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
@@ -88,7 +94,7 @@
         <h2 class="visually-hidden">Тарифы</h2>
         <div class="price__wrapper slider">
           <table class="price__list slider__list">
-            <tr>
+            <tr class="visually-hidden">
               <th>Название тарифа</th>
               <th>Цена</th>
               <th>Валюта</th>
@@ -118,21 +124,20 @@
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-        <ul class="contacts__interactions interaction-list">
-          <li class="interaction-list__item interaction">
-            <p class="interaction__type">Звоните:</p>
-            <p class="interaction__detail">+7(812)555-66-66</p>
+        <ul class="contacts__interaction-list">
+          <li class="contacts__interaction-list-item">
+            <p class="contacts__label">Звоните:</p>
+            <p class="contacts__data">+7(812)555-66-66</p>
           </li>
-          <li class="interaction-list__item interaction">
-            <p class="interaction__type">Пишите:</p>
-            <p class="interaction__detail">mail@htmlacademy.ru</p>
+          <li class="contacts__interaction-list">
+            <p class="contacts__label">Пишите:</p>
+            <p class="contacts__data">mail@htmlacademy.ru</p>
           </li>
-          <li class="interaction-list__item interaction">
-            <p class="interaction__type">Приезжайте в гости:</p>
-            <p class="interaction__detail">ул. Большая Конюшенная, 19/8 </p>
+          <li class="contacts__interaction-list">
+            <p class="contacts__label">Приезжайте в гости:</p>
+            <p class="contacts__data">ул. Большая Конюшенная, 19/8 </p>
           </li>
         </ul>
-        <img class="contacts_map" src="http://placehold.it/320x645" alt="расположение" width="320" height="645">
       </div>
     </footer>
   </body>
