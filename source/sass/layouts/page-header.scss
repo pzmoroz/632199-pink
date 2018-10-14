@@ -1,5 +1,29 @@
 .page-header {
-  opacity: 1;
+  display: block;
+
 }
+
+.page-header__constant {
+  height: 66px;
+}
+
+.page-header__nav-button {
+  background-image: url("./../../img/icon-menu-cross.svg")
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .page-header__constant {
+    height: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+  }
+}
+
 
 

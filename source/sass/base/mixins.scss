@@ -1,0 +1,15 @@
+@mixin reset-list() {
+  margit: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin no-outline() {
+  outline: 0;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
