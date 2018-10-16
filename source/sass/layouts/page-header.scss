@@ -1,19 +1,28 @@
 .page-header {
   display: block;
-
+  z-index: 10;
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .page-header__constant {
   height: 66px;
+  background-color: $color-header;
 }
 
 .page-header__nav-button {
-  background-image: url("./../../img/icon-menu-cross.svg")
+  background-image: url("./../img/icon-menu-cross.svg")
+}
+
+.page-header__navigation {
+  width: 100%;
 }
 
 
-
 @media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+  }
   .page-header__constant {
     height: 110px;
   }
@@ -21,6 +30,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    width: $desktop-width;
     display: flex;
   }
 }

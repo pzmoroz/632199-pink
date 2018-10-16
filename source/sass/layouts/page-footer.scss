@@ -1,9 +1,22 @@
 .page-footer {
-  opacity: 1;
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .page-footer__contacts {
   background-image: url("../img/bg-map-mobile@1x.png");
   background-size: 100% 100%;
   background-color: $color-background-secondary;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: $desktop-width;
+  }
 }
