@@ -16,7 +16,6 @@
 
 .main-features__list {
   @include reset-list();
-  margin: 20px;
   padding-bottom: 300px;
 
   background-image: url("../img/iphone-screen-mobile@1x.png");
