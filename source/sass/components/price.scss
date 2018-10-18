@@ -1,5 +1,5 @@
 .price {
-  background-color: $color-background-main;
+  background-color: $color-background-secondary;
 }
 
 .price__name {
@@ -17,4 +17,26 @@
 
 .price__option {
   @include font(14px, $color-font-main-dark, normal);
+}
+
+.price__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  background-color: aqua;
+}
+
+.price__header {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.price__data {
+  border: 2px solid black;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
 }

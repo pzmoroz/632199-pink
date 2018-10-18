@@ -35,8 +35,6 @@
     <main class="page-main">
       <h1 class="visually-hidden">Мир в розовом цвете</h1>
       <section class="download">
-        <!-- <div class="download__hand"></div> -->
-        <!-- <img class="download__hand" src="./img/iphone-hand-mobile@1x.png" width="320" height="314" alt="рука с телефоном"> -->
         <div class="download__wrapper">
           <h2 class="download__slogan">Взгляните на жизнь иначе!</h2>
           <a class="download__link">
@@ -82,7 +80,7 @@
         <img class="effect__timer" src="img/icon-timer.svg">
         <div class="effect__wrapper">
           <h2 class="effect__title">Эффект на 24 часа!</h2>
-          <p class="effect__desciption">Эффект на 24 часа! Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <p class="effect__desciption">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
           <a class="effect_link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
@@ -106,25 +104,54 @@
       <section class="price">
         <h2 class="visually-hidden">Тарифы</h2>
         <div class="price__wrapper slider">
-          <table class="price__list slider__list">
-            <tr class="visually-hidden">
-              <th>Название тарифа</th>
-              <th>Цена</th>
-              <th>Валюта</th>
-              <th>Популярность</th>
-              <th>Розовый фильтр</th>
-              <th>Смайлики</th>
-              <th>Комментарии</th>
+          <table>
+          <div class="price__list">
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+          </div>
+          </table>
+          <table>
+            <div class="price__list">
+
+
+            <tr class="price__header">
+              <th class="visually-hidden">Название тарифа</th>
+              <th class="visually-hidden">Цена</th>
+              <th class="visually-hidden">Валюта</th>
+              <th class="visually-hidden">Популярность</th>
+              <th class="pcrice__column-name">Розовый фильтр</th>
+              <th class="pcrice__column-name">Смайлики</th>
+              <th class="pcrice__column-name">Комментарии</th>
             </tr>
-            <tr class="price__item slider__item">
+            <tr class="price__data slider__item">
+              <td class="price__name">База</td>
+              <td class="price__value">1.99</td>
+              <td class="price__currency">USD</td>
+              <td class="price__popularity">Стандартный</td>
+              <td class="price__filter price__option price__option--true">есть</td>
+              <td class="price__smiles price__option price__option--true">нет</td>
+              <td class="price__comments price__option price__option--false">нет</td>
+            </tr>
+            <tr class="price__data slider__item">
               <td class="price__name">Стандарт</td>
               <td class="price__value">3.99</td>
               <td class="price__currency">USD</td>
-              <td class="price__type">Хит</td>
+              <td class="price__popularity price-badge">Хит</td>
               <td class="price__filter price__option price__option--true">есть</td>
               <td class="price__smiles price__option price__option--true">есть</td>
               <td class="price__comments price__option price__option--false">нет</td>
             </tr>
+            <tr class="price__data slider__item">
+              <td class="price__name">Анлим</td>
+              <td class="price__value">9.99</td>
+              <td class="price__currency">USD</td>
+              <td class="price__popularity">Стандартный</td>
+              <td class="price__filter price__option price__option--true">есть</td>
+              <td class="price__smiles price__option price__option--true">есть</td>
+              <td class="price__comments price__option price__option--false">есть</td>
+            </tr>
+            </div>
           </table>
           <p class="price__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>

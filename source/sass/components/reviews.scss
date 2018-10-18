@@ -6,6 +6,11 @@
   flex-direction: column;
 }
 
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews__author {
   @include font(18px, $color-font-main-darkest, bold);
   line-height: 1.67;
@@ -42,6 +47,7 @@
     @include font(14px, $color-font-main-dark, normal);
     line-height: 2.14;
     text-align: center;
+    order: 3;
   }
 
   .reviews__text {
@@ -52,14 +58,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews__text {
+    order: 1;
+  }
   .reviews__author {
     @include font(24px, $color-font-main-darkest, bold);
-
+    order: 2;
   }
 
   .reviews__author-description {
     display: block;
     @include font(18px, $color-font-main-dark, normal);
     line-height: 1.67;
+    order: 3;
   }
 }
