@@ -1,16 +1,22 @@
 .page-footer {
-  width: $mobile-width;
+  background-color: $color-background-main;
   margin: 0 auto;
+  width: $mobile-width;
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    height: 127px;
     width: $tablet-width;
+    display: block;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
+    height: 177px;
+    display: block;
     width: $desktop-width;
   }
 }

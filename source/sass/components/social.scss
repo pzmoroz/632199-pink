@@ -1,8 +1,16 @@
 .social {
-  background-color: $color-background-secondary;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
 }
 
+.social__list {
+  @include reset-list();
+  display: flex;
+  flex-direction: row;
+}
 
 .social__link {
   &--twitter {
@@ -14,4 +22,11 @@
   &--youtube {
     background-image: ulr("../img/icon-youtube.svg");
   };
+}
+
+@media (min-width: $tablet-width) {
+
+}
+@media (min-width: $desktop-width) {
+
 }
