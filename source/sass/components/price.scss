@@ -20,13 +20,12 @@
 }
 
 .price__list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 100%;
-  background-color: aqua;
+  height: 200px;
 }
+
 
 .price__header {
   display: flex;
@@ -35,7 +34,6 @@
 }
 
 .price__data {
-  border: 2px solid black;
   width: 100px;
   display: flex;
   flex-direction: column;
