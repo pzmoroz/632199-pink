@@ -2,7 +2,10 @@
   background-color: $color-background-main;
   margin: 0 auto;
   width: $mobile-width;
-  display: none;
+
+  &--main {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {

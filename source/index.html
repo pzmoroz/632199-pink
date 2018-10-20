@@ -103,45 +103,46 @@
       </section>
       <section class="price">
         <h2 class="visually-hidden">Тарифы</h2>
-
         <div class="price__wrapper slider">
-          <table class="price__list">
-            <tr class="price__header">
-              <th class="visually-hidden">Название тарифа</th>
-              <th class="visually-hidden">Цена</th>
-              <th class="visually-hidden">Валюта</th>
-              <th class="visually-hidden">Популярность</th>
-              <th class="pcrice__column-name">Розовый фильтр</th>
-              <th class="pcrice__column-name">Смайлики</th>
-              <th class="pcrice__column-name">Комментарии</th>
-            </tr>
-            <tr class="price__data slider__item">
-              <td class="price__name">База</td>
-              <td class="price__value">1.99</td>
-              <td class="price__currency">USD</td>
-              <td class="price__popularity">Стандартный</td>
-              <td class="price__filter price__option price__option--true">есть</td>
-              <td class="price__smiles price__option price__option--true">нет</td>
-              <td class="price__comments price__option price__option--false">нет</td>
-            </tr>
-            <tr class="price__data slider__item">
-              <td class="price__name">Стандарт</td>
-              <td class="price__value">3.99</td>
-              <td class="price__currency">USD</td>
-              <td class="price__popularity price-badge">Хит</td>
-              <td class="price__filter price__option price__option--true">есть</td>
-              <td class="price__smiles price__option price__option--true">есть</td>
-              <td class="price__comments price__option price__option--false">нет</td>
-            </tr>
-            <tr class="price__data slider__item">
-              <td class="price__name">Анлим</td>
-              <td class="price__value">9.99</td>
-              <td class="price__currency">USD</td>
-              <td class="price__popularity">Стандартный</td>
-              <td class="price__filter price__option price__option--true">есть</td>
-              <td class="price__smiles price__option price__option--true">есть</td>
-              <td class="price__comments price__option price__option--false">есть</td>
-            </tr>
+          <table class="price__table">
+            <tbody class="price__list price__list--body">
+              <tr class="price__data price__data--header">
+                <th class="visually-hidden">Название тарифа</th>
+                <th class="visually-hidden">Цена</th>
+                <th class="visually-hidden">Валюта</th>
+                <th class="visually-hidden">Популярность</th>
+                <th class="price__cell price__cell--column-name">Розовый фильтр</th>
+                <th class="price__cell price__cell--column-name">Смайлики</th>
+                <th class="price__cell price__cell--column-name">Комментарии</th>
+              </tr>
+              <tr class="price__data slider__item">
+                <td class="price__header price__header--name">База</td>
+                <td class="price__header price__header--value">1.99</td>
+                <td class="price__header price__header--currency">USD</td>
+                <td class="visually-hidden">Стандартный</td>
+                <td class="price__cell price__cell--true">есть</td>
+                <td class="price__cell price__cell--true">нет</td>
+                <td class="price__cell price__cell--false">нет</td>
+              </tr>
+              <tr class="price__data slider__item">
+                <td class="price__header price__header--name">Стандарт</td>
+                <td class="price__header price__header--value">3.99</td>
+                <td class="price__header price__header--currency">USD</td>
+                <td class="price__header price__header--popularity">Хит</td>
+                <td class="price__cell price__cell--true">есть</td>
+                <td class="price__cell price__cell--true">есть</td>
+                <td class="price__cell price__cell--false">нет</td>
+              </tr>
+              <tr class="price__data slider__item">
+                <td class="price__header price__header--name">Анлим</td>
+                <td class="price__header price__header--value">9.99</td>
+                <td class="price__header price__header--currency">USD</td>
+                <td class="visually-hidden">Стандартный</td>
+                <td class="price__cell price__cell--true">есть</td>
+                <td class="price__cell price__cell--true">есть</td>
+                <td class="price__cell price__cell--false">есть</td>
+              </tr>
+            </tbody>
           </table>
           <p class="price__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
@@ -170,10 +171,10 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--main">
       <div class="page-footer__social social">
         <a class="social__logo">
-          <img class="social__logo-image" src="img/logo-pink-white-mobile.svg" width="147" height="40">
+          <img class="social__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40">
         </a>
         <ul class="social__list">
           <li class="social__list-item">

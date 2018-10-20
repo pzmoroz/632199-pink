@@ -1,9 +1,13 @@
 .social {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 100%;
+}
+
+.social__logo {
+  margin: 40px auto;
 }
 
 .social__list {
@@ -25,7 +29,9 @@
 }
 
 @media (min-width: $tablet-width) {
-
+  .social {
+    flex-direction: row;
+  }
 }
 @media (min-width: $desktop-width) {
 
