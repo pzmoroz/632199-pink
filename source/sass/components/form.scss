@@ -1,3 +1,14 @@
+.form {
+  margin: 20px;
+}
+
+.form__header {
+  @include font(14px, $color-font-main-dark, normal);
+  line-height: 2.14;
+  text-align: center;
+  margin: 100px 80px
+}
+
 .form__fio {
   background-color: $color-background-main;
 }

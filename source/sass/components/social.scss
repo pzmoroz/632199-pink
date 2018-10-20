@@ -7,13 +7,15 @@
 }
 
 .social__logo {
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
 .social__list {
   @include reset-list();
   display: flex;
   flex-direction: row;
+
+  margin: 20px auto;
 }
 
 .social__link {
@@ -26,6 +28,10 @@
   &--youtube {
     background-image: ulr("../img/icon-youtube.svg");
   };
+}
+
+.social__copyright {
+  margin: 20px auto;
 }
 
 @media (min-width: $tablet-width) {

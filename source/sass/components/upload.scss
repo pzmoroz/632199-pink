@@ -34,11 +34,7 @@
   margin: 30px 50px 30px 50px;
 }
 
-.upload__action-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 
 .upload__action {
   @include reset-button();
@@ -62,9 +58,23 @@
 }
 
 .upload__scale-slider {
+  display: none;
   width: 240px;
   position: relative;
   margin: 0 auto;
+}
+
+.upload__action-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:first-child .upload__scale-slider {
+    display: block;
+    position: absolute;
+    top: 70px;
+  }
 }
 
 .upload__scale {
@@ -124,7 +134,14 @@
   }
 
   .upload__action-item {
+    display: flex;
     flex-direction: row;
+    &:first-child .upload__scale-slider {
+      display: block;
+      position: relative;
+      top: 0px;
+    }
+
   }
 
   .upload__action {
