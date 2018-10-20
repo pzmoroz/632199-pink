@@ -1,28 +1,51 @@
 .form {
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .form__header {
   @include font(14px, $color-font-main-dark, normal);
   line-height: 2.14;
   text-align: center;
-  margin: 100px 80px
+  margin-top: 55px;
+  margin-bottom: 45px;
 }
 
-.form__fio {
-  background-color: $color-background-main;
+.form__fieldset {
+  border: none;
+  padding: 0 20px;
+  margin: 0;
+
+  &--person {
+    background-color: $color-background-main;
+    order: 1;
+  }
+
+  &--achievements {
+    background-color: $color-background-secondary;
+    order: 2;
+  }
+
+  &--contact {
+    background-color: $color-background-main;
+    order: 3;
+  }
+
+  &--application {
+    background-color: $color-background-secondary;
+    order: 4;
+  }
+
+  &--emotion {
+    background-color: $color-background-main;
+    order: 5;
+  }
 }
 
-.form__achievements {
-  background-color: $color-background-secondary;
-}
-
-.form__contact {
-  background-color: $color-background-main;
-}
-
-.form__application {
-  background-color: $color-background-secondary;
+.form__person-input {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__title {
@@ -35,10 +58,27 @@
   }
 }
 
+
+.form__legend-label {
+  @include font(14px, $color-font-red, normal);
+  text-transform: uppercase;
+  line-height: 1.29;
+
+  //margin: 37px 50px 40px 50px;
+  margin: 37px auto;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
 .form__label {
+
+  @include font(14px, $color-font-red, normal);
+
   &--for-text {
-    @include font(14px, $color-font-red, normal);
+    text-transform: uppercase;
     line-height: 2.14;
+    margin-left: 20px;
   };
 
   &--for-radio,
@@ -46,11 +86,15 @@
     @include font(18px, $color-font-main-dark, normal);
     line-height: 1.67;
   };
+
+
 }
 
 .form__intput-text {
   @include font(18px, $color-font-main-dark, normal);
   line-height: 1.67;
+  height: 59px;
+  padding-left: 20px;
 }
 
 .form__emotion-label {
@@ -61,19 +105,155 @@
 .form__emotion-text {
   @include font(18px, $color-font-main-dark, normal);
   line-height: 1.67;
+
+  width: 100%;
+  height: 197px;
+
+  margin: 0 auto;
+  padding: 18px;
+  box-sizing: content-box;
+
+  border: 2px solid $color-table-border;
+  resize: none;
 }
 
-.form__buttom {
+.form__submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 6;
+  flex-grow: 1;
+  padding: 0;
+
+}
+
+.form__submit-buttom {
+  @include reset-button();
   background-color: $color-green;
-  @include font(14px, $color-font-main-light, bold);
+  @include font(18px, $color-font-main-light, bold);
   line-height: 1.67;
+
+  width: 276px;
+  height: 59px;
+  border-radius: 2px;
 }
 
-.form__hint {
+.form__submit-hint {
   @include font(14px, $color-font-main-dark, normal);
+  text-transform: uppercase;
   line-height: 2.14;
+  text-align: center;
 }
 
 .form__asterix {
   @include font(14px, $color-font-red, normal);
+}
+
+@media (min-width: $tablet-width) {
+  .form__header {
+    margin: 100px 80px;
+    @include font(18px, $color-font-main-dark, normal);
+    line-height: 1.67;
+  }
+
+  .form__fieldset {
+    border: 2px solid $color-table-border;
+    margin-bottom: 50px;
+    padding: 50px 60px;
+
+    &--person {
+      border: none;
+      padding: 0;
+      order: 1;
+    }
+
+    &--achievements {
+      background-color: $color-background-main;
+      order: 4;
+    }
+
+    &--contact {
+      background-color: $color-background-main;
+      order: 3;
+    }
+
+    &--application {
+      background-color: $color-background-main;
+      order: 2;
+    }
+
+    &--emotion {
+      background-color: $color-background-main;
+      order: 5;
+    }
+  }
+
+  .form__legend-label{
+    margin: 0 auto;
+    float: none;
+    width: auto;
+    text-align: center;
+  }
+
+  .form__person-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form__intput-text {
+    margin-left: 20px;
+    flex-grow: 2;
+  }
+
+  .form__submit {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__fieldset {
+    border: 2px solid $color-table-border;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 50px 60px;
+
+    &--person {
+      border: none;
+      padding: 0;
+      width: 431px;
+    }
+
+    &--achievements {
+      background-color: $color-background-main;
+      width: 936px;
+    }
+
+    &--contact {
+      background-color: $color-background-main;
+      width: 936px;
+    }
+
+    &--application {
+      background-color: $color-background-main;
+      width: 431px;
+    }
+
+    &--emotion {
+      background-color: $color-background-main;
+      width: 936px;
+    }
+  }
+
+  .form__submit {
+    padding: 0 137px;
+  }
 }
