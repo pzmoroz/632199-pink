@@ -1,7 +1,38 @@
 .main-header {
+  height: 320px;
+  margin-top: -66px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  box-sizing: content-box;
 }
 
 .main-header__title {
   @include font(24px, $color-font-main-light, normal);
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    height: 440px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 0%;
+  }
+
+  .main-header__title {
+    @include font(50px, $color-font-main-light, normal);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    height: 395px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: 50% 10%;
+    padding: 0 200px;
+  }
 }

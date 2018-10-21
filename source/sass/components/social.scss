@@ -1,8 +1,22 @@
 .social {
-  background-color: $color-background-secondary;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
 }
 
+.social__logo {
+  margin: 20px auto;
+}
+
+.social__list {
+  @include reset-list();
+  display: flex;
+  flex-direction: row;
+
+  margin: 20px auto;
+}
 
 .social__link {
   &--twitter {
@@ -14,4 +28,17 @@
   &--youtube {
     background-image: ulr("../img/icon-youtube.svg");
   };
+}
+
+.social__copyright {
+  margin: 20px auto;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    flex-direction: row;
+  }
+}
+@media (min-width: $desktop-width) {
+
 }

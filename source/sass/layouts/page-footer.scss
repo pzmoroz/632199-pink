@@ -1,9 +1,25 @@
 .page-footer {
-  opacity: 1;
+  background-color: $color-background-main;
+  margin: 0 auto;
+  width: $mobile-width;
+
+  &--main {
+    display: none;
+  }
 }
 
-.page-footer__contacts {
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-size: 100% 100%;
-  background-color: $color-background-secondary;
+@media (min-width: $tablet-width) {
+  .page-footer {
+    height: 127px;
+    width: $tablet-width;
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    height: 177px;
+    display: block;
+    width: $desktop-width;
+  }
 }

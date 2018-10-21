@@ -1,18 +1,16 @@
-.registration {
-  background-color: $color-background-main;
-
+.page-main {
   width: $mobile-width;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
-  .registration {
+  .page-main {
     width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .registration {
+  .page-main {
     width: $desktop-width;
   }
 }

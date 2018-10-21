@@ -1,8 +1,0 @@
-.like-block {
-  opacity: 1;
-}
-
-.like-block__counter {
-  @include font(12px, $color-font-red, normal);
-  line-height: 2;
-}

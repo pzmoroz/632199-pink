@@ -1,0 +1,71 @@
+.effect {
+  display: none;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-size: 238px 276px;
+    background-position: 21px 59px;
+    background-color: $color-background-main;
+    display: block;
+    padding-left: 329px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 298px 345px;
+    background-position: 131px 17px;
+    background-color: $color-background-secondary;
+    display: block;
+    padding-left: 496px;
+    padding-top: 110px;
+    padding-bottom: 115px;
+  }
+}
+
+.effect__timer {
+  opacity: 0.3;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    width: 238px;
+    height: 276px;
+    top: 59px;
+    left: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    height: 345px;
+    top: 17px;
+    left: 131px;
+  }
+}
+
+.effect__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+  }
+}
+
+.effect__title {
+  @include font(30px, $color-font-main-darkest, bold);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.effect__desciption {
+  @include font(14px, $color-font-main-dark, normal);
+  line-height: 1.71;
+  text-align: left;
+}
+
+.effect_link{
+  @include font(14px, $color-font-red, normal);
+  text-align: left;
+  text-decoration: none;
+}

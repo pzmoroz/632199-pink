@@ -1,10 +1,21 @@
-.gallery-photo {
+
+.gallery-photo__wrapper {
   background-color: $color-background-secondary;
+  margin: 0 20px 20px 20px;
+  padding: 25px 20px 20px 20px;
+}
+
+
+.gallery-photo__image {
+  display: block;
+  margin: 0 auto;
 }
 
 .gallery-photo__autor {
   @include font(14px, $color-font-main-darkest, bold);
   line-height: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 .gallery-photo__time-ago {
@@ -15,4 +26,129 @@
 .gallery-photo__description {
   @include font(14px, $color-font-main-dark, normal);
   line-height: 24px;
+}
+
+.gallery-photo__like-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gallery-photo__like-button {
+  @include reset-button();
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 12px;
+}
+
+.gallery-photo__like-counter {
+  display: block;
+  @include font(12px, $color-font-red, normal);
+  text-transform: capitalize;
+  line-height: 2;
+  margin: 0;
+  padding: 0 0 0 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery-photo{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .gallery-photo__wrapper {
+    height: 155px;
+    box-sizing: content-box;
+    margin: 0 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery-photo__image {
+    width: 0px;
+    height: 0px;
+    padding-left: 300px;
+    padding-top: 300px;
+
+    &--panorama-of-the-day {
+      width: 0px;
+      height: 0px;
+      padding-left: 660px;
+      padding-top: 509px;
+      background: url("../img/panorama-tablet@1x.jpg") no-repeat;
+    }
+    &--car {
+      background: url("../img/photo-car-tablet@1x.jpg") no-repeat;
+    }
+    &--drums {
+      background: url("../img/photo-drumset-tablet@1x.jpg") no-repeat;
+    }
+    &--windows {
+      background: url("../img/photo-window-tablet@1x.jpg") no-repeat;
+    }
+    &--cuban {
+      background: url("../img/photo-fair-tablet@1x.jpg") no-repeat;
+    }
+    &--legs {
+      background: url("../img/photo-pov-tablet@1x.jpg") no-repeat;
+    }
+    &--plane {
+      background: url("../img/photo-wing-tablet@1x.jpg") no-repeat;
+    }
+  }
+
+  .gallery-photo__like-block {
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  .gallery-photo__like-button {
+    order: 2;
+    padding-right: 20px;
+  }
+  .gallery-photo__like-counter {
+    order: 1;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery-photo__wrapper {
+    margin: 0 0px 50px 0px;
+  }
+
+  .gallery-photo__image {
+    width: 0px;
+    height: 0px;
+    padding-left: 300px;
+    padding-top: 400px;
+    &--panorama-of-the-day {
+      width: 0px;
+      height: 0px;
+      margin-left: -130px;
+      padding-left: 1200px;
+      padding-top: 506px;
+      background: url("../img/panorama-desktop@1x.jpg") no-repeat;
+    }
+    &--car {
+      background: url("../img/photo-car-desktop@1x.jpg") no-repeat;
+    }
+    &--drums {
+      background: url("../img/photo-drumset-desktop@1x.jpg") no-repeat;
+    }
+    &--windows {
+      background: url("../img/photo-window-desktop@1x.jpg") no-repeat;
+    }
+    &--cuban {
+      background: url("../img/photo-fair-desktop@1x.jpg") no-repeat;
+    }
+    &--legs {
+      background: url("../img/photo-pov-desktop@1x.jpg") no-repeat;
+    }
+    &--plane {
+      background: url("../img/photo-wing-desktop@1x.jpg") no-repeat;
+    }
+  }
 }

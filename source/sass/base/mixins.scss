@@ -1,0 +1,24 @@
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin no-outline() {
+  outline: 0;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+
+@mixin reset-button() {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  outline: inherit;
+  font-size: 0px;
+  cursor: pointer;
+}

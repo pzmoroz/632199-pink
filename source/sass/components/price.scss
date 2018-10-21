@@ -1,20 +1,139 @@
 .price {
+
+  background-color: $color-background-secondary;
+  height: 534px;
+  padding-top: 159px;
+  box-sizing: border-box;
+}
+
+.price__wrapper{
+  margin: 0 auto;
+}
+
+.price__table {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.price__list {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  position: absolute;
+  left: -250px;
+}
+
+
+.price__data {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 276px;
+  padding-top: 94px;
+
+}
+
+.price__header {
+  position: absolute;
+  height: 94px;
+  width: 276px;
+  &--name {
+    background-color: $color-header;
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    padding-top: 20px;
+    text-align: center;
+    @include font(18px, $color-font-main-light, bold);
+  };
+  &--value, {
+    top: 52px;
+    left: 89px;
+    @include font(24px, $color-font-main-light, normal);
+  };
+  &--popularity {
+    top: 13px;
+    left: 10px;
+    @include font(10px, $color-font-main-light, normal);
+  };
+  &--currency {
+    top: 52px;
+    left: 140px;
+    @include font(24px, $color-font-main-light, normal);
+  };
+}
+
+.price__cell {
+  height: 59px;
+  border: solid 2px $color-table-border;
   background-color: $color-background-main;
+
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--column-name {
+
+    @include font(14px, $color-font-main-dark, normal);
+  };
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &--true {
+    font-size: 0;
+    background-image: url("../img/icon-yes.svg");
+  };
+
+  &--false {
+    font-size: 0;
+    background-image: url("../img/icon-no.svg");
+  };
 }
 
-.price__name {
-  @include font(18px, $color-font-main-light, bold);
-}
+@media (min-width: $tablet-width) {
 
-.price__value,
-.price__currency {
-  @include font(24px, $color-font-main-light, normal);
-}
+  .price__list {
+    position: relative;
+    left: 0;
+  }
 
-.price__type {
-  @include font(10px, $color-font-main-light, normal);
-}
+  .price__data {
+    width: 152px;
+    padding-top: 75px;
+    &--header {
 
-.price__option {
-  @include font(14px, $color-font-main-dark, normal);
+    }
+  }
+  .price__header {
+    width: 152px;
+    height: 75px;
+  }
+  .price__cell {
+    height: 45px;
+  }
+
+  .price__toggles {
+    display: none;
+  }
+}
+@media (min-width: $desktop-width) {
+  .price__data {
+    width: 233px;
+    padding-top: 94px;
+    &--header {
+
+    }
+  }
+  .price__header {
+    width: 233px;
+    height: 94px;
+  }
+  .price__cell {
+    height: 59px;
+  }
 }
