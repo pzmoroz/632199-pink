@@ -2,7 +2,6 @@
   display: block;
   z-index: 10;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .page-header__constant {
@@ -10,26 +9,16 @@
   padding: 0 20px;
   background-color: $color-header;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  border-bottom: 1px solid #000000;
 }
 
-.page-header__logo {
+.page-header__logo-image {
   width: 74px;
   height: 23px;
-  background-image: url("../img/logo-pink-white-mobile.svg");
-  background-repeat: no-repeat;
-  font-size: 0px;
+  margin-top: 22px;
 }
 
-.page-header__nav-button {
-  @include reset-button();
-  background-image: url("../img/icon-menu-cross.svg");
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
-}
+
 
 .page-header__navigation {
   width: 100%;
@@ -65,6 +54,7 @@
   .page-header__constant {
     height: 110px;
     padding: 0 130px;
+
   }
 
 

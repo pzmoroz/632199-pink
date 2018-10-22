@@ -1,13 +1,100 @@
  .main-nav {
   z-index: 10;
-  background-color: #283645;
+  position: relative;
+  background-color: $color-header;
   a {
     text-decoration: none;
   }
 }
 
+.main-nav__toggle {
+  @include reset-button();
+  // background-image: url("../img/icon-menu-cross.svg");
+  // background-repeat: no-repeat;
+  // background-size: 24px 24px;
+
+  position: absolute;
+  top: -55px;
+  right: 20px;
+  z-index: 11;
+  font-size: 0;
+
+  display: block;
+  width: 70px;
+  height: 50px;
+
+  background-color: $color-header-darker;
+
+  &:hover,
+  &:active {
+    background-color: $color-header-darkest;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 10px;
+
+  width: 50px;
+  height: 5px;
+
+  background-color: $color-background-main;
+  box-shadow: 0 11px 0 0 $color-background-main, 0 22px 0 0 $color-background-main;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: $color-red;
+  box-shadow: 0 11px 0 0 $color-red, 0 22px 0 0 $color-red;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: -55px;
+  right: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    left: 18px;
+
+    width: 30px;
+    height: 5px;
+
+    background-color: $color-background-main;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $color-red;
+  }
+}
+
 .main-nav__list {
   @include reset-list();
+}
+
+.main-nav__list-item {
+  //box-shadow: 0px 1px 0 0 #000000, inset 0px 1px 0 0 rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 @media (min-width: $desktop-width) {
