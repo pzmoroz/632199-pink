@@ -11,7 +11,7 @@
     <header class="page-header">
       <div class="page-header__constant">
         <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          Some text
         </a>
         <button class="page-header__nav-button" type="button">Открыть меню</button>
       </div>
@@ -35,7 +35,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Мир в розовом цвете</h1>
       <section class="download">
-        <div class="download__wrapper">
+        <div class="download__wrapper page-main__block">
           <h2 class="download__slogan">Взгляните на жизнь иначе!</h2>
           <a class="download__link">
             <button class="download__link-button">Скачать приложение</button>
@@ -56,36 +56,40 @@
 
       </section>
       <section class="main-features">
-        <h2 class="visually-hidden">Информация программе</h2>
-        <header class="main-features__header">
-          <p class="main-features__statement">Устали от серости мегаполиса?</p>
-          <p class="main-features__statement">Нам есть, что вам предложить!</p>
-        </header>
-        <ul class="main-features__list">
-          <li class="main-features__list-item">
-            <h3 class="main-features__title">Поднимает настроение</h3>
-            <p class="main-features__description">Приложение позволит вам победить осеннюю</p>
-          </li>
-          <li class="main-features__list-item">
-            <h3 class="main-features__title">Меняет мир вокруг</h3>
-            <p class="main-features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="main-features__list-item">
-            <h3 class="main-features__title">Заводит новых друзей</h3>
-            <p class="main-features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+        <div class="main-features__block page-main__block">
+          <h2 class="visually-hidden">Информация программе</h2>
+          <header class="main-features__header">
+            <p class="main-features__statement">Устали от серости мегаполиса?</p>
+            <p class="main-features__statement">Нам есть, что вам предложить!</p>
+          </header>
+          <ul class="main-features__list">
+            <li class="main-features__list-item">
+              <h3 class="main-features__title">Поднимает настроение</h3>
+              <p class="main-features__description">Приложение позволит вам победить осеннюю</p>
+            </li>
+            <li class="main-features__list-item">
+              <h3 class="main-features__title">Меняет мир вокруг</h3>
+              <p class="main-features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="main-features__list-item">
+              <h3 class="main-features__title">Заводит новых друзей</h3>
+              <p class="main-features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="effect">
-        <img class="effect__timer" src="img/icon-timer.svg">
-        <div class="effect__wrapper">
-          <h2 class="effect__title">Эффект на 24 часа!</h2>
-          <p class="effect__desciption">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="effect_link" href="#">Узнать больше об исследовании</a>
+        <div class="effect_block page-main__block">
+          <img class="effect__timer" src="img/icon-timer.svg">
+          <div class="effect__wrapper">
+            <h2 class="effect__title">Эффект на 24 часа!</h2>
+            <p class="effect__desciption">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="effect_link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper slider">
+        <div class="reviews__wrapper slider page-main__block">
           <h2 class="visually-hidden">Отзывы</h2>
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
@@ -102,57 +106,60 @@
         </div>
       </section>
       <section class="price">
-        <h2 class="visually-hidden">Тарифы</h2>
-        <div class="price__wrapper slider">
-          <table class="price__table">
-            <tbody class="price__list price__list--body">
-              <tr class="price__data price__data--header">
-                <th class="visually-hidden">Название тарифа</th>
-                <th class="visually-hidden">Цена</th>
-                <th class="visually-hidden">Валюта</th>
-                <th class="visually-hidden">Популярность</th>
-                <th class="price__cell price__cell--column-name">Розовый фильтр</th>
-                <th class="price__cell price__cell--column-name">Смайлики</th>
-                <th class="price__cell price__cell--column-name">Комментарии</th>
-              </tr>
-              <tr class="price__data slider__item">
-                <td class="price__header price__header--name">База</td>
-                <td class="price__header price__header--value">1.99</td>
-                <td class="price__header price__header--currency">USD</td>
-                <td class="visually-hidden">Стандартный</td>
-                <td class="price__cell price__cell--true">есть</td>
-                <td class="price__cell price__cell--true">нет</td>
-                <td class="price__cell price__cell--false">нет</td>
-              </tr>
-              <tr class="price__data slider__item">
-                <td class="price__header price__header--name">Стандарт</td>
-                <td class="price__header price__header--value">3.99</td>
-                <td class="price__header price__header--currency">USD</td>
-                <td class="price__header price__header--popularity">Хит</td>
-                <td class="price__cell price__cell--true">есть</td>
-                <td class="price__cell price__cell--true">есть</td>
-                <td class="price__cell price__cell--false">нет</td>
-              </tr>
-              <tr class="price__data slider__item">
-                <td class="price__header price__header--name">Анлим</td>
-                <td class="price__header price__header--value">9.99</td>
-                <td class="price__header price__header--currency">USD</td>
-                <td class="visually-hidden">Стандартный</td>
-                <td class="price__cell price__cell--true">есть</td>
-                <td class="price__cell price__cell--true">есть</td>
-                <td class="price__cell price__cell--false">есть</td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle slider__toggle--active" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+        <div class="page-main__block">
+          <h2 class="visually-hidden">Тарифы</h2>
+          <div class="price__wrapper slider">
+            <table class="price__table">
+              <tbody class="price__list price__list--body">
+                <tr class="price__data price__data--header">
+                  <th class="visually-hidden">Название тарифа</th>
+                  <th class="visually-hidden">Цена</th>
+                  <th class="visually-hidden">Валюта</th>
+                  <th class="visually-hidden">Популярность</th>
+                  <th class="price__cell price__cell--column-name">Розовый фильтр</th>
+                  <th class="price__cell price__cell--column-name">Смайлики</th>
+                  <th class="price__cell price__cell--column-name">Комментарии</th>
+                </tr>
+                <tr class="price__data slider__item">
+                  <td class="price__header price__header--name">База</td>
+                  <td class="price__header price__header--value">1.99</td>
+                  <td class="price__header price__header--currency">USD</td>
+                  <td class="visually-hidden">Стандартный</td>
+                  <td class="price__cell price__cell--true">есть</td>
+                  <td class="price__cell price__cell--true">нет</td>
+                  <td class="price__cell price__cell--false">нет</td>
+                </tr>
+                <tr class="price__data slider__item">
+                  <td class="price__header price__header--name">Стандарт</td>
+                  <td class="price__header price__header--value">3.99</td>
+                  <td class="price__header price__header--currency">USD</td>
+                  <td class="price__header price__header--popularity">Хит</td>
+                  <td class="price__cell price__cell--true">есть</td>
+                  <td class="price__cell price__cell--true">есть</td>
+                  <td class="price__cell price__cell--false">нет</td>
+                </tr>
+                <tr class="price__data slider__item">
+                  <td class="price__header price__header--name">Анлим</td>
+                  <td class="price__header price__header--value">9.99</td>
+                  <td class="price__header price__header--currency">USD</td>
+                  <td class="visually-hidden">Стандартный</td>
+                  <td class="price__cell price__cell--true">есть</td>
+                  <td class="price__cell price__cell--true">есть</td>
+                  <td class="price__cell price__cell--false">есть</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="price__toggles slider__toggles">
+              <button class="slider__toggle" type="button">1</button>
+              <button class="slider__toggle slider__toggle--active" type="button">2</button>
+              <button class="slider__toggle" type="button">3</button>
+            </p>
+          </div>
         </div>
+
       </section>
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper page-main__block">
           <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
           <ul class="contacts__interaction-list">
             <li class="contacts__interaction-list-item">

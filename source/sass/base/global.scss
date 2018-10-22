@@ -4,13 +4,6 @@ $desktop-width: 1200px;
 
 body {
   @include font(18px, $color-font-main-dark);
-}
-
-ul {
-  list-style: none;
   padding: 0;
-}
-
-a {
-  text-decoration: none;
+  margin: 0;
 }
