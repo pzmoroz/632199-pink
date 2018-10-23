@@ -1,7 +1,7 @@
 .page-footer {
   background-color: $color-background-main;
   margin: 0 auto;
-  width: $mobile-width;
+  min-width: $mobile-width;
 
   &--main {
     display: none;

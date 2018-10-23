@@ -14,7 +14,7 @@
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
         </a>
       </div>
-      <nav class="page-header__navigation main-nav main-nav--opened">
+      <nav class="page-header__navigation main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__list-item main-nav__list-item--active">
@@ -35,33 +35,36 @@
     <main class="page-main">
       <h1 class="visually-hidden">Мир в розовом цвете</h1>
       <section class="download">
-        <div class="download__wrapper page-main__block">
-          <h2 class="download__slogan">Взгляните на жизнь иначе!</h2>
-          <a class="download__link">
-            <button class="download__link-button">Скачать приложение</button>
-          </a>
-          <ul class="download__list">
-            <li class="download__list-item download__list-item--apple">
-              <a>Apple</a>
-            </li>
-            <li class="download__list-item download__list-item--android">
-              <a>Android</a>
-            </li>
-            <li class="download__list-item download__list-item--windows">
-              <a>Windows</a>
-            </li>
-          </ul>
-          <p class="download__description">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="download__wrapper">
+          <div class="download__block">
+            <h2 class="download__slogan">Взгляните на жизнь иначе!</h2>
+            <a class="download__link">
+              <button class="download__link-button">Скачать приложение</button>
+            </a>
+            <ul class="download__list">
+              <li class="download__list-item download__list-item--apple">
+                <a><span class="visually-hidden">Apple</button></a>
+              </li>
+              <li class="download__list-item download__list-item--android">
+                <a><span class="visually-hidden">Android</button></a>
+              </li>
+              <li class="download__list-item download__list-item--windows">
+                <a><span class="visually-hidden">Windows</button></a>
+              </li>
+            </ul>
+            <p class="download__description">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
-
       </section>
       <section class="main-features">
-        <div class="main-features__block page-main__block">
-          <h2 class="visually-hidden">Информация программе</h2>
+        <h2 class="visually-hidden">Информация программе</h2>
+        <div class="main-features__block--header">
           <header class="main-features__header">
             <p class="main-features__statement">Устали от серости мегаполиса?</p>
             <p class="main-features__statement">Нам есть, что вам предложить!</p>
           </header>
+        </div>
+        <div class="main-features__block--list">
           <ul class="main-features__list">
             <li class="main-features__list-item">
               <h3 class="main-features__title">Поднимает настроение</h3>
@@ -79,8 +82,12 @@
         </div>
       </section>
       <section class="effect">
-        <div class="effect_block page-main__block">
-          <img class="effect__timer" src="img/icon-timer.svg">
+        <div class="effect_block">
+          <!-- <img class="effect__timer" src="img/icon-timer.svg"> -->
+          <div class="effect__timer">
+            <img class="effect__timer-img" src="img/icon-timer.svg" width="238" height="276">
+            <div class="effect__timer-value">24</div>
+          </div>
           <div class="effect__wrapper">
             <h2 class="effect__title">Эффект на 24 часа!</h2>
             <p class="effect__desciption">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
@@ -200,5 +207,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,12 +1,25 @@
 .main-features {
-  background-color: $color-background-secondary;
+
 }
 
+.main-features__block {
+
+  &--header {
+    background-color: $color-background-main;
+  }
+
+  &--list {
+    background-color: $color-background-secondary;
+  }
+}
+
+
 .main-features__header {
-  //height: 217px;
-  background-color: #ffffff;
+  width: $mobile-width;
+  margin: 0 auto;
   text-align: center;
   padding: 40px;
+
 }
 
 .main-features__statement {
@@ -15,8 +28,11 @@
 
 .main-features__list {
   @include reset-list();
+  width: $mobile-width;
   padding-bottom: 300px;
+  margin: 0 auto;
 
+  box-sizing: border-box;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50% 110%;
@@ -36,9 +52,11 @@
 
 @media (min-width: $tablet-width) {
   .main-features__header {
+    width: $tablet-width;
     padding: 59px;
   }
   .main-features__list {
+    width: $tablet-width;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 0% 0%;
@@ -49,11 +67,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-features {
+  .main-features__header {
     width: $desktop-width;
   }
 
   .main-features__list {
+    width: $desktop-width;
     padding-left: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
