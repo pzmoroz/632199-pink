@@ -11,7 +11,6 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     height: 127px;
-    width: $tablet-width;
     display: block;
   }
 }
@@ -20,6 +19,5 @@
   .page-footer {
     height: 177px;
     display: block;
-    width: $desktop-width;
   }
 }

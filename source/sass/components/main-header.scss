@@ -1,26 +1,31 @@
 .main-header {
-  height: 320px;
-  margin-top: -66px;
+  height: 171px;
+  //margin-top: -66px;
 
   display: flex;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 50% -66px;
+  //background-position: center -66px;
   background-repeat: no-repeat;
-  box-sizing: content-box;
+  background-size: cover;
 }
 
 .main-header__title {
   @include font(24px, $color-font-main-light, normal);
   text-align: center;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .main-header {
-    height: 440px;
+    height: 330px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% 0%;
+    background-position: 50% -110px;
+    background-repeat: no-repeat;
+
   }
 
   .main-header__title {
@@ -30,9 +35,9 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    height: 395px;
+    height: 284px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: 50% 10%;
-    padding: 0 200px;
+    background-position: 50% -110;
+    //padding: 0 200px;
   }
 }
