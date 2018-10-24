@@ -113,14 +113,41 @@
   text-align: center;
   border-radius: 27px 27px 27px 27px;
 
+
+
   &--publish {
     border: 3px solid $color-font-red;
     @include font(18px, $color-font-red, bold);
+
+    &:hover {
+      background-color: $color-red;
+      @include font(18px, $color-font-main-ligth, bold);
+    }
   }
+
+  &--publish:hover {
+    background-color: $color-red;
+    @include font(18px, $color-font-main-ligth, bold);
+  }
+
   &--cancel {
     border: 3px solid $color-font-main-dark;
     opacity: 0.1;
     @include font(18px, $color-font-main-dark, bold);
+  }
+}
+
+.upload__button:hover {
+  &--publish {
+    background-color: $color-red;
+      @include font(18px, $color-font-main-ligth, bold);
+  }
+}
+
+.upload__button:active {
+  &--publish {
+    background-color: $color-red;
+    @include font(18px, $color-font-main-ligth, bold);
   }
 }
 

@@ -115,6 +115,15 @@
   &--contact {
     order: 2;
   }
+
+  &:hover {
+    border: 2px solid $color-font-main-dark;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $color-font-red;
+  }
 }
 
 .form__emotion-label {
@@ -156,6 +165,18 @@
   width: 276px;
   height: 59px;
   border-radius: 2px;
+
+  &:hover {
+    background-color: $color-green-active;
+  }
+
+  &:active {
+    @include font(18px, $color-main-active, bold);
+  }
+
+  &:disabled {
+    background-color: $color-table-border;
+  }
 }
 
 .form__submit-hint {

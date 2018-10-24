@@ -139,6 +139,18 @@
       text-transform: capitalize;
       line-height: 1;
     }
+
+    a:hover {
+      @include font(18px, $color-font-red, normal);
+      text-transform: capitalize;
+      line-height: 1;
+    }
+
+    a:active {
+      @include font(18px, $color-main-active, normal);
+      text-transform: capitalize;
+      line-height: 1;
+    }
   }
 }
 

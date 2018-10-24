@@ -37,10 +37,21 @@
   height: 55px;
   margin: 0 auto;
   margin-bottom: 30px;
-  border: 3px solid $color-font-main-light;
+  border: 3px solid $color-background-main;
   border-radius: 27px;
 
   @include font(18px, $color-font-main-light, bold);
+
+  &:hover {
+    @include font(18px, $color-red, bold);
+    background-color: $color-background-main;
+  }
+
+  &:active {
+    @include font(18px, $color-red-active, bold);
+    background-color: $color-background-main;
+
+  }
 }
 
 .download__list {
