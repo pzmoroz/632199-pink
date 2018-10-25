@@ -84,14 +84,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  text-align: center;
   height: 63px;
   a {
     @include font(18px, $color-font-main-light, bold);
     text-transform: uppercase;
     line-height: 1.78;
   }
-  text-align: center;
+
+  a:hover {
+    @include font(18px, $color-font-red, bold);
+  }
+
+  a:active {
+    @include font(18px, $color-main-active, bold);
+  }
 
 }
 
@@ -142,14 +149,10 @@
 
     a:hover {
       @include font(18px, $color-font-red, normal);
-      text-transform: capitalize;
-      line-height: 1;
     }
 
     a:active {
       @include font(18px, $color-main-active, normal);
-      text-transform: capitalize;
-      line-height: 1;
     }
   }
 }

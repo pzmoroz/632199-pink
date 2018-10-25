@@ -3,15 +3,45 @@
   z-index: 10;
   margin: 0 auto;
   min-width: $mobile-width;
-  background-color: $color-header;
+  //background-color: $color-header;
+
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+    background-color: $color-header;
+
+  }
+
+  &--closed {
+    &:before {
+      opacity: 0.3;
+    }
+  }
+
+  &--opened {
+    &:before {
+      opacity: 1;
+    }
+  }
 }
+
+
+
 
 .page-header__constant {
   height: 66px;
   padding: 0 20px;
   display: flex;
   align-items: center;
-  background-color: $color-header;
+  //background-color: $color-header;
 }
 
 .page-header__navigation {

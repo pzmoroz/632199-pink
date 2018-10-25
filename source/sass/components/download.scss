@@ -1,15 +1,26 @@
 .download {
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto, cover;
-  background-position: center 176px, center -66px;
-  background-color: $color-header;
   z-index: 0;
   margin: 0 auto;
   //margin-top: -66px;
   padding-top: 462px;
 
   box-sizing: border-box;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -66px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
+    background-position: center 176px, center -66px;
+    background-color: $color-header;
+  }
 }
 
 .download__wrapper{

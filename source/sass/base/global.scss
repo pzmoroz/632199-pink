@@ -7,4 +7,5 @@ body {
   @include font(18px, $color-font-main-dark);
   padding: 0;
   margin: 0;
+  position: relative;
 }
