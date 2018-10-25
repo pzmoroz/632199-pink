@@ -107,12 +107,17 @@
 @media (min-width: $tablet-width) {
   .download
   {
-    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-    background-position: center 100%, center -110px;
-    background-size: auto, auto;
     height: 619px;
     //margin-top: -110px;
     padding-top: 100px;
+
+    &:after {
+      top: -110px;
+      height: 729px;
+      background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+      background-position: center 200px, center 0px;
+      background-size: auto, cover;
+    }
   }
 
   .download__wrapper {
@@ -145,10 +150,16 @@
 
 @media (min-width: $desktop-width) {
   .download {
-    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-position: 65% 100%, center -110px;
     height: 743px;
     padding-top: 120px;
+
+    &:after {
+      top: -110px;
+      height: 853px;
+      background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+      background-position: 65% 208px, center 0px;
+      background-size: auto, cover;
+    }
   }
 
   .download__wrapper {

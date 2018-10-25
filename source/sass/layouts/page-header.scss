@@ -17,7 +17,6 @@
     opacity: 0.3;
     z-index: -1;
     background-color: $color-header;
-
   }
 
   &--closed {
@@ -32,9 +31,6 @@
     }
   }
 }
-
-
-
 
 .page-header__constant {
   height: 66px;
@@ -64,6 +60,18 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.3;
+      z-index: -1;
+      background-color: $color-header;
+    }
   }
 
   .page-header__constant {
