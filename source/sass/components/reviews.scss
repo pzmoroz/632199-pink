@@ -6,6 +6,10 @@
   flex-direction: column;
 }
 
+.reviews__wrapper {
+  position: relative;
+}
+
 .reviews__item {
   display: flex;
   flex-direction: column;
@@ -29,6 +33,10 @@
   line-height: 2.14;
   text-align: center;
   order: 2;
+}
+
+.reviews__toggles {
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -58,6 +66,29 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    padding-top: 190px;
+    padding-bottom: 35px;
+  }
+
+  .reviews__list {
+    width: 720px;
+    margin: 0 auto;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 79px;
+      height: 69px;
+      position: absolute;
+      top: -121px;
+      left: 360px;
+      opacity: 0.1;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
   .reviews__text {
     order: 1;
   }
@@ -72,4 +103,10 @@
     line-height: 1.67;
     order: 3;
   }
+
+  .reviews__toggles {
+    position: absolute;
+    top: -210px;
+  }
+
 }
