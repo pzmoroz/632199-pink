@@ -1,16 +1,11 @@
 $mobile-width: 320px;
 $tablet-width: 660px;
 $desktop-width: 1200px;
+$mobile-and-tablet-width: 1199px;
 
 body {
   @include font(18px, $color-font-main-dark);
-}
-
-ul {
-  list-style: none;
   padding: 0;
-}
-
-a {
-  text-decoration: none;
+  margin: 0;
+  position: relative;
 }

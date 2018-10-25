@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  padding: 0 22px;
 }
 
 .form__header {
@@ -14,7 +15,7 @@
 
 .form__fieldset {
   border: none;
-  padding: 0 20px;
+  //padding: 0 20px;
   margin: 0;
 
   &--person {
@@ -48,6 +49,12 @@
   flex-direction: column;
 }
 
+.form__contact-input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .form__title {
   @include font(14px, $color-font-main-dark, normal);
   line-height: 2.14;
@@ -69,6 +76,10 @@
   float: left;
   width: 100%;
   text-align: center;
+
+  &--contact {
+    display: none;
+  }
 }
 
 .form__label {
@@ -80,6 +91,10 @@
     line-height: 2.14;
     margin-left: 20px;
   };
+
+  &--for-contact {
+    order: 1;
+  }
 
   &--for-radio,
   &--for-checkbox {
@@ -94,7 +109,21 @@
   @include font(18px, $color-font-main-dark, normal);
   line-height: 1.67;
   height: 59px;
+  box-sizing: border-box;
   padding-left: 20px;
+
+  &--contact {
+    order: 2;
+  }
+
+  &:hover {
+    border: 2px solid $color-font-main-dark;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $color-font-red;
+  }
 }
 
 .form__emotion-label {
@@ -136,6 +165,18 @@
   width: 276px;
   height: 59px;
   border-radius: 2px;
+
+  &:hover {
+    background-color: $color-green-active;
+  }
+
+  &:active {
+    @include font(18px, $color-main-active, bold);
+  }
+
+  &:disabled {
+    background-color: $color-table-border;
+  }
 }
 
 .form__submit-hint {
@@ -193,6 +234,10 @@
     float: none;
     width: auto;
     text-align: center;
+
+    &--contact {
+      display: inline;
+    }
   }
 
   .form__person-input {
@@ -201,9 +246,68 @@
     align-items: center;
   }
 
+  .form__contact-input {
+    flex-direction: column;
+    padding: 0 60px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 60px;
+      top: 0px;
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-color: $color-table-border;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+
+    &--phone {
+      &:after {
+        background-image: url(../img/icon-phone.svg);
+        background-size: 20px 19px;
+      }
+    }
+
+    &--email {
+      &:after {
+        background-image: url(../img/icon-mail.svg);
+        background-size: 18px 13px;
+      }
+    }
+  }
+
+  .form__contact-input-phone {
+    &:after {
+      content: "";
+      position: absolute;
+      right: 60px;
+      top: 0px;
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-image: url(../img/icon-phone.svg);
+      background-size: 20px 19px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+
+  .form__label {
+    &--for-contact {
+      order: 2;
+    }
+  }
+
   .form__intput-text {
     margin-left: 20px;
-    flex-grow: 2;
+    flex-grow: 1;
+
+    &--contact {
+      order: 1;
+    }
   }
 
   .form__submit {

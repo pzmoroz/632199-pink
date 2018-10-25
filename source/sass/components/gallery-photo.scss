@@ -1,4 +1,8 @@
 
+.gallery-photo {
+  position: relative;
+}
+
 .gallery-photo__wrapper {
   background-color: $color-background-secondary;
   margin: 0 20px 20px 20px;
@@ -9,13 +13,51 @@
 .gallery-photo__image {
   display: block;
   margin: 0 auto;
+
+  &--panorama-of-the-day ~ div {
+    &:after{
+      content: "Панорама дня";
+      box-sizing: border-box;
+      text-align: center;
+      position: absolute;
+      padding-top: 10px;
+      top: 0;
+      right: 20px;
+
+      @include font(12px, $color-font-main-light, normal);
+      text-transform: uppercase;
+
+      width: 140px;
+      height: 36px;
+      background-color: $color-red;
+    }
+  }
+
 }
+
+// .gallery-photo__image--panorama-of-the-day ~ div {
+//   &:after{
+//     content: "Панорама дня";
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+
+//     @include font(12px, $color-font-main-light, normal);
+//     text-transform: uppercase;
+
+//     width: 140px;
+//     height: 36px;
+//     background-color: $color-red;
+//   }
+// }
 
 .gallery-photo__autor {
   @include font(14px, $color-font-main-darkest, bold);
   line-height: 24px;
   margin: 0;
   padding: 0;
+
+
 }
 
 .gallery-photo__time-ago {
@@ -79,6 +121,13 @@
       padding-top: 509px;
       background: url("../img/panorama-tablet@1x.jpg") no-repeat;
     }
+
+    &--panorama-of-the-day ~ div {
+      &:after{
+        top: 57px;
+      }
+    }
+
     &--car {
       background: url("../img/photo-car-tablet@1x.jpg") no-repeat;
     }

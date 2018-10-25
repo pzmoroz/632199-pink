@@ -1,45 +1,21 @@
 .effect {
   display: none;
-  position: relative;
 
-  @media (min-width: $tablet-width) {
-    background-size: 238px 276px;
-    background-position: 21px 59px;
-    background-color: $color-background-main;
-    display: block;
-    padding-left: 329px;
-    padding-top: 100px;
-    padding-bottom: 80px;
-  }
+}
 
-  @media (min-width: $desktop-width) {
-    background-size: 298px 345px;
-    background-position: 131px 17px;
-    background-color: $color-background-secondary;
-    display: block;
-    padding-left: 496px;
-    padding-top: 110px;
-    padding-bottom: 115px;
-  }
+.effect_block {
+  //position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .effect__timer {
-  opacity: 0.3;
-  position: absolute;
-
-  @media (min-width: $tablet-width) {
-    width: 238px;
-    height: 276px;
-    top: 59px;
-    left: 21px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 298px;
-    height: 345px;
-    top: 17px;
-    left: 131px;
-  }
+  // opacity: 0.3;
+  // position: absolute;
 }
 
 .effect__wrapper {
@@ -68,4 +44,97 @@
   @include font(14px, $color-font-red, normal);
   text-align: left;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+
+    display: block;
+    background-color: $color-background-main;
+  }
+
+  .effect_block {
+    width: $tablet-width;
+
+
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .effect__timer {
+    width: 238px;
+    height: 276px;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .effect__timer-img {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 238px;
+    height: 276px;
+    opacity: 0.1;
+  }
+
+  .effect__timer-value {
+    display: block;
+    box-sizing: border-box;
+    width: 202px;
+    height: 202px;
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    border: 14px solid $color-red;
+    border-radius: 50%;
+    @include font(96px, $color-font-red, bold);
+    text-align: center;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect{
+
+    display: block;
+    background-color: $color-background-secondary;
+  }
+
+  .effect_block {
+    width: $desktop-width;
+    background-color: $color-background-secondary;
+    padding: 110px 130px 67px;
+  }
+
+  .effect__timer {
+    width: 298px;
+    height: 345px;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .effect__timer-img {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 298px;
+    height: 345px;
+    opacity: 0.1;
+  }
+
+  .effect__timer-value {
+    display: block;
+    box-sizing: border-box;
+    width: 253px;
+    height: 253px;
+    position: absolute;
+    left: 22px;
+    bottom: 22px;
+
+    border: 16px solid $color-red;
+    border-radius: 50%;
+    @include font(120px, $color-font-red, bold);
+    text-align: center;
+    padding-top: 20px;
+  }
 }
