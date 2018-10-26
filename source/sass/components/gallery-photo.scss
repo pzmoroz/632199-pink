@@ -109,17 +109,12 @@
   }
 
   .gallery-photo__image {
-    width: 0px;
-    height: 0px;
-    padding-left: 300px;
-    padding-top: 300px;
+    width: 300px;
+    height: 300px;
 
     &--panorama-of-the-day {
-      width: 0px;
-      height: 0px;
-      padding-left: 660px;
-      padding-top: 509px;
-      background: url("../img/panorama-tablet@1x.jpg") no-repeat;
+      width: 660px;
+      height: 509px;
     }
 
     &--panorama-of-the-day ~ div {
@@ -128,24 +123,24 @@
       }
     }
 
-    &--car {
-      background: url("../img/photo-car-tablet@1x.jpg") no-repeat;
-    }
-    &--drums {
-      background: url("../img/photo-drumset-tablet@1x.jpg") no-repeat;
-    }
-    &--windows {
-      background: url("../img/photo-window-tablet@1x.jpg") no-repeat;
-    }
-    &--cuban {
-      background: url("../img/photo-fair-tablet@1x.jpg") no-repeat;
-    }
-    &--legs {
-      background: url("../img/photo-pov-tablet@1x.jpg") no-repeat;
-    }
-    &--plane {
-      background: url("../img/photo-wing-tablet@1x.jpg") no-repeat;
-    }
+    // &--car {
+    //   background: url("../img/photo-car-tablet@1x.jpg") no-repeat;
+    // }
+    // &--drums {
+    //   background: url("../img/photo-drumset-tablet@1x.jpg") no-repeat;
+    // }
+    // &--windows {
+    //   background: url("../img/photo-window-tablet@1x.jpg") no-repeat;
+    // }
+    // &--cuban {
+    //   background: url("../img/photo-fair-tablet@1x.jpg") no-repeat;
+    // }
+    // &--legs {
+    //   background: url("../img/photo-pov-tablet@1x.jpg") no-repeat;
+    // }
+    // &--plane {
+    //   background: url("../img/photo-wing-tablet@1x.jpg") no-repeat;
+    // }
   }
 
   .gallery-photo__like-block {
@@ -169,35 +164,12 @@
   }
 
   .gallery-photo__image {
-    width: 0px;
-    height: 0px;
-    padding-left: 300px;
-    padding-top: 400px;
+    width: 300px;
+    height: 400px;
     &--panorama-of-the-day {
-      width: 0px;
-      height: 0px;
+      width: 1200px;
+      height: 506px;
       margin-left: -130px;
-      padding-left: 1200px;
-      padding-top: 506px;
-      background: url("../img/panorama-desktop@1x.jpg") no-repeat;
-    }
-    &--car {
-      background: url("../img/photo-car-desktop@1x.jpg") no-repeat;
-    }
-    &--drums {
-      background: url("../img/photo-drumset-desktop@1x.jpg") no-repeat;
-    }
-    &--windows {
-      background: url("../img/photo-window-desktop@1x.jpg") no-repeat;
-    }
-    &--cuban {
-      background: url("../img/photo-fair-desktop@1x.jpg") no-repeat;
-    }
-    &--legs {
-      background: url("../img/photo-pov-desktop@1x.jpg") no-repeat;
-    }
-    &--plane {
-      background: url("../img/photo-wing-desktop@1x.jpg") no-repeat;
     }
   }
 }

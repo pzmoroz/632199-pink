@@ -6,30 +6,34 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <header class="page-header page-header--opened">
-          <div class="page-header__constant">
-            <a class="page-header__logo">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
-            </a>
-          </div>
-          <nav class="page-header__navigation main-nav main-nav--opened main-nav--nojs">
-            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</button>
-            <ul class="main-nav__list">
-              <li class="main-nav__list-item main-nav__list-item--active">
-                <a href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__list-item">
-                <a>Фотографии</a>
-              </li>
-              <li class="main-nav__list-item">
-                <a href="form.html">Конкурс</a>
-              </li>
-              <li class="main-nav__list-item">
-                <a href="#">HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+    <header class="page-header page-header--opened">
+      <div class="page-header__constant">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+          </picture>
+        </a>
+      </div>
+      <nav class="page-header__navigation main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item main-nav__list-item--active">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a>Фотографии</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main class="page-main">
       <header class="main-header">
         <h1 class="main-header__title">Фотографии<br> пользователей</h1>
@@ -40,7 +44,11 @@
         </header>
         <ul class="gallery__list">
           <li class="gallery__list-item gallery-photo">
-            <img class="gallery-photo__image gallery-photo__image--panorama gallery-photo__image--panorama-of-the-day" src="img/panorama-mobile@1x.jpg" alt="панорама" width="320" height="137">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="gallery-photo__image gallery-photo__image--panorama gallery-photo__image--panorama-of-the-day" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" alt="панорама" width="320" height="137">
+            </picture>
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Анна <span class="gallery-photo__time-ago">(5 минут назад)</span></p>
               <p class="gallery-photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -51,7 +59,11 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <img class="gallery-photo__image gallery-photo__image--car" src="img/photo-car-mobile@1x.jpg" alt="машина" width="280" height="180">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="gallery-photo__image gallery-photo__image--car" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg" alt="машина" width="280" height="180">
+            </picture>
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Левон <span class="gallery-photo__time-ago">(5 часов назад)</span></p>
               <p class="gallery-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -62,7 +74,11 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <img class="gallery-photo__image gallery-photo__image--drums" src="img/photo-drumset-mobile@1x.jpg" alt="барабаны" width="280" height="180">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="gallery-photo__image gallery-photo__image--drums" src="img/photo-drumset-mobile@1x.jpg" alt="барабаны" width="280" height="180">
+            </picture>
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Антон <span class="gallery-photo__time-ago">(12 часов назад)</span></p>
               <p class="gallery-photo__description">Соседи будут рады!</p>
@@ -73,7 +89,11 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <img class="gallery-photo__image gallery-photo__image--windows" src="img/photo-window-mobile@1x.jpg" alt="небоскреб" width="280" height="180">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="gallery-photo__image gallery-photo__image--windows" src="img/photo-window-mobile@1x.jpg" alt="окно" width="280" height="180">
+            </picture>
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Борис <span class="gallery-photo__time-ago">(20 часов назад)</span></p>
               <p class="gallery-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -84,7 +104,11 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <img class="gallery-photo__image gallery-photo__image--cuban" src="img/photo-fair-mobile@1x.jpg" alt="кубанская бахча" width="280" height="180">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="gallery-photo__image gallery-photo__image--cuban" src="img/photo-fair-mobile@1x.jpg" alt="кубанская бахча" width="280" height="180">
+            </picture>
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Сергей <span class="gallery-photo__time-ago">(25 часов назад)</span></p>
               <p class="gallery-photo__description">Самая кубанская в мире!</p>
@@ -95,7 +119,11 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <img class="gallery-photo__image gallery-photo__image--legs" src="img/photo-pov-mobile@1x.jpg" alt="ноги" width="280" height="180">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="gallery-photo__image gallery-photo__image--legs" src="img/photo-pov-mobile@1x.jpg" alt="ноги" width="280" height="180">
+            </picture>
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Максим <span class="gallery-photo__time-ago">(40 часов назад)</span></p>
               <p class="gallery-photo__description">Где снег-то?</p>
@@ -106,7 +134,11 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <img class="gallery-photo__image gallery-photo__image--plane" src="img/photo-wing-mobile@1x.jpg" alt="самолет" width="280" height="180">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="gallery-photo__image gallery-photo__image--plane" src="img/photo-wing-mobile@1x.jpg" alt="самолет" width="280" height="180">
+            </picture>
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Надежда <span class="gallery-photo__time-ago">(45 часов назад)</span></p>
               <p class="gallery-photo__description">Всем GM и взаимные лайки!</p>
@@ -123,7 +155,12 @@
           <h2 class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
         </header>
         <div class="upload__wrapper">
-          <img class="upload__image" alt="загруженное фото" src="img/photo-road-mobile@1x.jpg" width="280" height="384">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="upload__image" alt="загруженное фото" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" width="280" height="384">
+          </picture>
+
           <div class="upload__action-wrapper">
             <ul class="upload__action-list">
               <li class="upload__action-item">
@@ -161,7 +198,10 @@
     <footer class="page-footer page-footer--main">
         <div class="page-footer__social social">
           <a class="social__logo">
-            <img class="social__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+              <img class="social__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+            </picture>
           </a>
           <ul class="social__list">
             <li class="social__list-item">

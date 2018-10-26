@@ -3,6 +3,9 @@ $tablet-width: 660px;
 $desktop-width: 1200px;
 $mobile-and-tablet-width: 1199px;
 
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
 body {
   @include font(18px, $color-font-main-dark);
   padding: 0;
