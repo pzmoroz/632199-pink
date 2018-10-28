@@ -10,7 +10,7 @@ var csso = require("gulp-csso");
 var del = require("del");
 var uglify = require('gulp-uglify');
 var rename = require("gulp-rename");
-var image = require("gulp-image");
+var image = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
@@ -56,18 +56,18 @@ gulp.task("copy", function () {
 });
 
 gulp.task("images", function () {
-  return gulp.src(["source/img/**/*.{png,jpg,svg}", "!source/img/**/icon-*.svg"])
-    .pipe(image({
-        mozjpeg: false,
-        jpegoptim: false,
-        jpegRecompress: true
-    }))
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(image([
+      imagemin.optipng(),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+    ]))
     .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("icons", function () {
   return gulp.src("source/img/icon-*.svg")
-    .pipe(image())
+    .pipe(image([imagemin.svgo()]))
     .pipe(svgstore({
       inlineSvg: true
     }))
