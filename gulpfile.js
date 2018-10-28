@@ -16,13 +16,18 @@ gulp.task("css", function () {
       autoprefixer()
     ]))
     .pipe(csso({}))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
