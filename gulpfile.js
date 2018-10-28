@@ -14,6 +14,7 @@ var image = require("gulp-image");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var webp = require("gulp-webp");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -74,6 +75,12 @@ gulp.task("icons", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("webp", function () {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -96,6 +103,7 @@ gulp.task("build", gulp.series(
   "copy",
   "images",
   "icons",
+  "webp",
   "css",
   "js",
   "html"
