@@ -10,6 +10,7 @@ var csso = require("gulp-csso");
 var del = require("del");
 var uglify = require('gulp-uglify');
 var rename = require("gulp-rename");
+var image = require("gulp-image");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -47,6 +48,16 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("images", function () {
+  return gulp.src(["source/img/**/*.{png,jpg,svg}", "!source/img/**/icon-*.svg"])
+    .pipe(image({
+        mozjpeg: false,
+        jpegoptim: false,
+        jpegRecompress: true
+    }))
+    .pipe(gulp.dest("build/img"));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -67,6 +78,7 @@ gulp.task("clean", function () {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
+  "images",
   "css",
   "js",
   "html"
