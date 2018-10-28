@@ -1,5 +1,6 @@
 .main-features {
 
+
 }
 
 .main-features__block {
@@ -10,9 +11,11 @@
 
   &--list {
     background-color: $color-background-secondary;
+    // background-image: url("../img/bg-triangle-white.svg");
+    // background-repeat: no-repeat;
+    // background-size: cover 50px;
   }
 }
-
 
 .main-features__header {
   width: $mobile-width;
@@ -25,6 +28,7 @@
 .main-features__statement {
   @include font(24px, $color-font-main-dark, normal);
 }
+
 
 .main-features__list {
   @include reset-list();

@@ -13,6 +13,19 @@
 
 .contacts_block {
   background-color: $color-background-main;
+  position: relative;
+
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 70px;
+  //   left: 0;
+  //   bottom: -70px;
+  //   background-image: url("../img/bg-triangle-white-footer.svg");
+  //   background-size: cover 70px;
+  //   background-repeat: no-repeat
+  // }
 }
 
 .contacts__title {
@@ -29,6 +42,18 @@
 .contacts__data {
   @include font(24px, $color-font-red, normal);
   text-align: center;
+
+  &--email {
+    &:hover {
+      @include font(24px, $color-blue-dark, normal);
+      text-decoration: underline;
+    }
+    &:active {
+      opacity: 0.3;
+      @include font(24px, $color-blue-dark, normal);
+      text-decoration: none;
+    }
+  }
 }
 
 .contacts__interaction-list {
@@ -39,10 +64,10 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    background-image: url("../img/icon-map-marker.svg"),  url("../img/bg-map-tablet@1x.jpg");
-    background-size: auto, cover;
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
+    background-size: auto auto, cover;
     background-repeat: no-repeat, no-repeat;
-    background-position: center 80%, center, 100%;
+    background-position: center 80%,center 100%;
     height: 848px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

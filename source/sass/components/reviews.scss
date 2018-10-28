@@ -11,8 +11,13 @@
 }
 
 .reviews__item {
-  display: flex;
-  flex-direction: column;
+  display: none;
+
+  &--active {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 .reviews__author {

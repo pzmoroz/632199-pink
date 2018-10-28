@@ -122,6 +122,18 @@
       background-color: $color-background-main;
       border: 2px solid $color-table-border;
     }
+
+    &:hover {
+      &:after {
+        border: 2px solid $color-blue-dark;
+      }
+    }
+
+    &:active {
+      &:after {
+        border: 2px solid $color-red;
+      }
+    }
   };
 
   &--for-radio {
@@ -142,6 +154,18 @@
       background-color: $color-background-main;
       border: 2px solid $color-table-border;
       border-radius: 50%;
+    }
+
+    &:hover {
+      &:after {
+        border: 2px solid $color-blue-dark;
+      }
+    }
+
+    &:active {
+      &:after {
+        border: 2px solid $color-red;
+      }
     }
   }
 }

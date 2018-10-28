@@ -35,9 +35,14 @@
   box-shadow: 0 11px 0 0 $color-background-main, 0 22px 0 0 $color-background-main;
 }
 
-.main-nav--closed .main-nav__toggle:active::before {
+.main-nav--closed .main-nav__toggle:hover::before {
   background-color: $color-red;
   box-shadow: 0 11px 0 0 $color-red, 0 22px 0 0 $color-red;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  opacity: 0.3;
+  background-color: $color-red;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -64,8 +69,14 @@
     transform: rotate(-45deg);
   }
 
+  &:hover::before,
+  &:hover::after {
+    background-color: $color-red;
+  }
+
   &:active::before,
   &:active::after {
+    opacity: 0.3;
     background-color: $color-red;
   }
 }

@@ -2,6 +2,8 @@
   background-color: $color-background-main;
   margin: 0 auto;
   min-width: $mobile-width;
+  height: 284px;
+  box-sizing: border-box;
 
   &--main {
     display: none;

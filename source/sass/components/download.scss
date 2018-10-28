@@ -18,13 +18,13 @@
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: auto, 100%;
-    background-position: left 176px, center 0px;
+    background-position: center 176px, center 0px;
     background-color: $color-header;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
       background-size: 240px 286px, cover;//320px 462px;
-      background-position: left 176px, center -66px;
+      background-position: center 176px, center -66px;
     }
   }
 }
@@ -46,6 +46,10 @@
 
 .download__slogan {
   display: none;
+}
+
+.download__link {
+  text-decoration: none;
 }
 
 .download__link-button {
