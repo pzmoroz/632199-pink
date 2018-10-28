@@ -38,6 +38,15 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("copy", function () {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -57,6 +66,7 @@ gulp.task("clean", function () {
 
 gulp.task("build", gulp.series(
   "clean",
+  "copy",
   "css",
   "js",
   "html"
