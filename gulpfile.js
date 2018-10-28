@@ -8,6 +8,7 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var del = require("del");
+var uglify = require('gulp-uglify');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -24,6 +25,7 @@ gulp.task("css", function () {
 gulp.task("js", function () {
   return gulp.src("source/js/*.js")
     .pipe(plumber())
+    .pipe(uglify({}))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
 });

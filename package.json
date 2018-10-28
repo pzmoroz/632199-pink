@@ -13,6 +13,7 @@
     "gulp-sass": "4.0.x",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
+    "gulp-uglify": "^3.0.1",
     "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
