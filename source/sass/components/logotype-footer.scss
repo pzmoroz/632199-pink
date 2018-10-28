@@ -1,0 +1,68 @@
+.logotype-footer {
+  display: inline-block;
+  vertical-align: top;
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    flex-shrink: 0;
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+    margin-bottom: 19px;
+  }
+}
+
+.logotype-footer__svg {
+  fill: $color-header;
+  color: $color-red;
+  width: 147px;
+  height: 40px;
+}
+
+.logotype-footer:hover .logotype-footer__svg {
+  fill: $color-red;
+}
+
+.logotype-footer:active .logotype-footer__svg {
+  fill: $color-header;
+  color: $color-red;
+  opacity: 0.3;
+}
+
+.logotype-footer__glasses {
+  fill: currentColor;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logotype-footer__glasses-crop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    fill: currentColor;
+  }
+}
+
+.logotype-footer__stars {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    fill: inherit;
+  }
+}
+
+.logotype-footer__star {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    fill: currentColor;
+  }
+}
