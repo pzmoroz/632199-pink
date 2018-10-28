@@ -29,6 +29,18 @@
 .contacts__data {
   @include font(24px, $color-font-red, normal);
   text-align: center;
+
+  &--email {
+    &:hover {
+      @include font(24px, $color-blue-dark, normal);
+      text-decoration: underline;
+    }
+    &:active {
+      opacity: 0.3;
+      @include font(24px, $color-blue-dark, normal);
+      text-decoration: none;
+    }
+  }
 }
 
 .contacts__interaction-list {
