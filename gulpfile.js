@@ -58,16 +58,16 @@ gulp.task("copy", function () {
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(image([
-      imagemin.optipng(),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
+      image.optipng(),
+      image.jpegtran({progressive: true}),
+      image.svgo()
     ]))
     .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("icons", function () {
   return gulp.src("source/img/icon-*.svg")
-    .pipe(image([imagemin.svgo()]))
+    .pipe(image([image.svgo()]))
     .pipe(svgstore({
       inlineSvg: true
     }))
