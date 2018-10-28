@@ -9,6 +9,7 @@ var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var del = require("del");
 var uglify = require('gulp-uglify');
+var rename = require("gulp-rename");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -18,6 +19,7 @@ gulp.task("css", function () {
       autoprefixer()
     ]))
     .pipe(csso({}))
+    .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
@@ -26,6 +28,7 @@ gulp.task("js", function () {
   return gulp.src("source/js/*.js")
     .pipe(plumber())
     .pipe(uglify({}))
+    .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
 });
