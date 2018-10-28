@@ -11,6 +11,7 @@ var del = require("del");
 var uglify = require('gulp-uglify');
 var rename = require("gulp-rename");
 var image = require("gulp-image");
+var svgstore = require("gulp-svgstore");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -58,6 +59,16 @@ gulp.task("images", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("icons", function () {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(image())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -79,6 +90,7 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "images",
+  "icons",
   "css",
   "js",
   "html"
