@@ -21,6 +21,13 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("js", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(plumber())
+    .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
+});
+
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(gulp.dest("build"));
@@ -46,6 +53,7 @@ gulp.task("clean", function () {
 gulp.task("build", gulp.series(
   "clean",
   "css",
+  "js",
   "html"
 ));
 
