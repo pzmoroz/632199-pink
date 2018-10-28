@@ -48,6 +48,10 @@
   display: none;
 }
 
+.download__link {
+  text-decoration: none;
+}
+
 .download__link-button {
   @include reset-button();
   width: 281px;
