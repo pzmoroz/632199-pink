@@ -11,10 +11,16 @@
 
   &--list {
     background-color: $color-background-secondary;
-    // background-image: url("../img/bg-triangle-white.svg");
-    // background-repeat: no-repeat;
-    // background-size: cover 50px;
+    position: relative;
+    @include triangle($height: 31px, $top: 0);
+
+    border: 1px solid green;
   }
+}
+
+.main-features__list {
+  border: 1px solid red;
+  z-index: 1;
 }
 
 .main-features__header {
