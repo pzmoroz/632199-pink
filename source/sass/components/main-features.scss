@@ -10,17 +10,13 @@
   }
 
   &--list {
-    background-color: $color-background-secondary;
+    //background-color: $color-background-secondary;
     position: relative;
     @include triangle($height: 31px, $top: 0);
-
-    border: 1px solid green;
   }
 }
 
 .main-features__list {
-  border: 1px solid red;
-  z-index: 1;
 }
 
 .main-features__header {
@@ -71,6 +67,13 @@
     width: $tablet-width;
     padding: 59px;
   }
+
+  .main-features__block {
+    &--list {
+      @include triangle($height: 51px, $top: 0);
+    }
+  }
+
   .main-features__list {
     width: $tablet-width;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
@@ -91,6 +94,12 @@
 @media (min-width: $desktop-width) {
   .main-features__header {
     width: $desktop-width;
+  }
+
+  .main-features__block {
+    &--list {
+      @include triangle($height: 74px, $top: 0);
+    }
   }
 
   .main-features__list {

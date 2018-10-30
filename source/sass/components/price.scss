@@ -1,13 +1,10 @@
 .price {
-
-  background-color: $color-background-secondary;
   height: 534px;
   padding-top: 159px;
   box-sizing: border-box;
 
-  // background-image: url("../img/bg-triangle-white.svg");
-  // background-repeat: no-repeat;
-  // background-size: cover 50px;
+  position: relative;
+  @include triangle($height: 25px, $top: 0);
 }
 
 .price__wrapper{
@@ -151,6 +148,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .price {
+    height: 534px;
+    padding-top: 159px;
+
+    position: relative;
+    @include triangle($height: 50px, $top: 0);
+  }
+
   .price__table {
     overflow: visible;
     width: $tablet-width;
@@ -239,6 +244,14 @@
   }
 }
 @media (min-width: $desktop-width) {
+  .price {
+    height: 534px;
+    padding-top: 159px;
+
+    position: relative;
+    @include triangle($height: 65px, $top: 0);
+  }
+
   .price__table {
     width: $desktop-width;
   }

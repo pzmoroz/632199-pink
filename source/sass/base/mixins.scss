@@ -34,7 +34,6 @@
     height: 100%;
     background: $color-background-secondary url(../img/bg-triangle-white.svg) no-repeat center top;
     background-size: 100% $height;
-    z-index: 0;
+    z-index: -1;
   }
 }
-  
