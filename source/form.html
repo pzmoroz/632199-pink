@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -62,7 +65,7 @@
       <section class="registration">
         <form class="registration__form form">
           <div class="form__block">
-            <h2 class="form__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
+            <h2 class="form__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form__header-request">Пожалуйста, заполните форму ниже:</span></h2>
           </div>
           <fieldset class="form__fieldset form__fieldset--person">
             <div class="form__block">
@@ -93,7 +96,7 @@
               </p>
               <p class="form__achievements-input">
                 <input class="visually-hidden form__intput-checkbox" type="checkbox" name="chuck-achievment" id="chuck-achievment">
-                <label class="form__label form__label--for-checkbox" for="chuck-achievment">Видел Чака Нориса</label>
+                <label class="form__label form__label--for-checkbox" for="chuck-achievment">Видел Чака Норриса</label>
               </p>
               <p class="form__achievements-input">
                 <input class="visually-hidden form__intput-checkbox" type="checkbox" name="souvenir-achievment" id="souvenir-achievment">
@@ -126,15 +129,15 @@
             <legend class="form__legend-label">С каким приложением путешествовали?</legend>
             <div class="form__block">
 
-              <p>
+              <p class="form__application-input">
                 <input class="form__intput-radio form__intput-radio--checked" type="radio" checked name="application" id="application-ios" value="ios">
                 <label class="form__label form__label--for-radio" for="application-ios">Pink для iOS</label>
               </p>
-              <p>
+              <p class="form__application-input">
                 <input class="form__intput-radio" type="radio" name="application" id="application-android" value="android">
-                <label class="form__label form__label--for-radio" for="application-android">Pink для android</label>
+                <label class="form__label form__label--for-radio" for="application-android">Pink на Android</label>
               </p>
-              <p>
+              <p class="form__application-input">
                 <input class="form__intput-radio" type="radio" name="application" id="application-windows" value="windows">
                 <label class="form__label form__label--for-radio" for="application-windows">Windows Phone</label>
               </p>
@@ -148,7 +151,7 @@
           </fieldset>
           <div class="form__submit">
             <input class="form__submit-buttom" type="submit" value="Отправить форму">
-            <p class="form__submit-hint"><span class="form__asterix">*</span>- Обязательные поля</p>
+            <p class="form__submit-hint"><span class="form__asterix">*</span> - Обязательные <span>для заполнения </span>поля</p>
           </div>
         </form>
       </section>
@@ -206,7 +209,7 @@
           </li>
         </ul>
         <div class="social__copyright">
-          <b class="social__copyright-text">Разработано:</b>
+          <b class="social__copyright-text">Разработано</b>
           <a class="social__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="social__copyright-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.943 34.09" width="27" height="34">
               <path d="M13.62.017L13.472 0 0 1.412v24.66l13.472 8.018 13.43-7.99.042-.026V1.412L13.62.017zm11.4 12.11L13.494 5.334V5.23l-.088.05-.088-.056v.11L1.924 12.117v-8.97l11.547-1.213L25.02 3.147v8.98zm-11.615-5.34L24.923 13.5l-4.48 2.64-7.092-4.22-.012 1.414 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.032-1.787-.012 1.413 1.852 1.092-1.8 1.08-11.356-6.75 11.37-6.835zm-11.48 8.34l11.41 6.79.016 1.045-7.94-4.728-.015 1.416 7.98 4.796.016 1.076-7.97-4.74-.014 1.414 8.02 4.82.046.027 8.143-4.872v-1.267l-.01-.148v-3.76l3.414-2.037v10.02L13.47 31.85 1.925 24.98v-9.853z"/>

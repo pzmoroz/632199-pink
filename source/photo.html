@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -65,7 +68,7 @@
         </header>
         <ul class="gallery__list">
           <li class="gallery__list-item gallery-photo">
-            <a class="gallery-photo__link" href="#">
+            <a class="gallery-photo__link gallery-photo__link--panorama-of-the-day" href="#">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
@@ -123,7 +126,7 @@
                 <img class="gallery-photo__image gallery-photo__image--windows" src="img/photo-window-mobile@1x.jpg" alt="окно" width="280" height="180">
               </picture>
             </a>
-            <div class="gallery-photo__wrapper">
+            <div class="gallery-photo__wrapper gallery-photo__wrapper--panarama">
               <p class="gallery-photo__autor">Борис <span class="gallery-photo__time-ago">(20 часов назад)</span></p>
               <p class="gallery-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="gallery-photo__like-block">

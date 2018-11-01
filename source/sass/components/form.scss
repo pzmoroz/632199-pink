@@ -9,40 +9,52 @@
   @include font(14px, $color-font-main-dark, normal);
   line-height: 2.14;
   text-align: center;
-  margin-top: 55px;
-  margin-bottom: 45px;
+  //margin-top: 55px;
+  //margin-bottom: 45px;
+
+  padding: 5px 20px 8px;
+}
+
+.form__header-request {
+  display: none;
 }
 
 .form__block {
   margin: 0 auto;
-  width: $mobile-width;
+  //width: $mobile-width;
   box-sizing: border-box;
 }
 
 .form__fieldset {
   border: none;
-  padding: 0 22px;
+  padding: 0 18px;
   box-sizing: border-box;
 
 
   &--person {
     background-color: $color-background-main;
     order: 1;
+    padding-bottom: 25px;
+
   }
 
   &--achievements {
     background-color: $color-background-secondary;
     order: 2;
+    margin-bottom: -5px;
   }
 
   &--contact {
     background-color: $color-background-main;
     order: 3;
+    padding-top: 14px;
+    padding-bottom: 26px;
   }
 
   &--application {
     background-color: $color-background-secondary;
     order: 4;
+    padding-bottom: 5px;
   }
 
   &--emotion {
@@ -79,7 +91,7 @@
   line-height: 1.29;
 
   width: 100%;//$mobile-width;
-  margin: 20px auto;
+  margin: 40px auto;
 
   float: left;
   text-align: center;
@@ -172,7 +184,7 @@
 
 .form__intput-checkbox:checked + .form__label--for-checkbox {
   &:after {
-    background-image: url("../img/icon-yes.svg");
+    background-image: url("../img/icon-yes-red.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -195,9 +207,10 @@
 .form__intput-text {
   @include font(18px, $color-font-main-dark, normal);
   line-height: 1.67;
-  height: 59px;
+  height: 61px;
   box-sizing: border-box;
   padding-left: 20px;
+  margin-top: 7px;
 
   &--contact {
     order: 2;
@@ -222,11 +235,11 @@
   @include font(18px, $color-font-main-dark, normal);
   line-height: 1.67;
 
-  width: 276px;
-  height: 197px;
+  width: 279px;
+  height: 202px;
 
-  margin: 0 auto;
-  padding: 18px;
+  margin-top: -26px;
+  padding: 15px 18px;
   box-sizing: border-box;
 
   border: 2px solid $color-table-border;
@@ -248,6 +261,7 @@
   order: 6;
   flex-grow: 1;
   padding: 0;
+  margin-top: 43px;
 
 }
 
@@ -257,9 +271,10 @@
   @include font(18px, $color-font-main-light, bold);
   line-height: 1.67;
 
-  width: 276px;
-  height: 59px;
-  border-radius: 2px;
+  width: 280px;
+  height: 62px;
+  border-radius: 3px;
+  text-transform: uppercase;
 
   &:hover {
     background-color: $color-green-active;
@@ -274,11 +289,24 @@
   }
 }
 
+.form__achievements-input {
+  margin-bottom: 52px;
+}
+
+.form__application-input {
+  margin-bottom: 43px;
+}
+
 .form__submit-hint {
   @include font(14px, $color-font-main-dark, normal);
   text-transform: uppercase;
   line-height: 2.14;
   text-align: center;
+  margin-top: 35px;
+}
+
+.form__submit-hint-ex {
+  display: none;
 }
 
 .form__asterix {
@@ -292,9 +320,13 @@
   }
 
   .form__header {
-    margin: 100px 80px;
+    padding: 12px 60px 31px;
     @include font(18px, $color-font-main-dark, normal);
     line-height: 1.67;
+  }
+
+  .form__header-request {
+    display: inline;
   }
 
   .form__block {
@@ -314,28 +346,32 @@
       border: none;
       padding: 0;
       order: 1;
+      margin-bottom: 29px;
     }
 
     &--achievements {
-      padding: 45px 60px;
+      margin-top: 8px;
+      padding: 30px 60px 20px;
       background-color: $color-background-main;
       order: 4;
     }
 
     &--contact {
-      padding: 45px 60px;
+      margin-top: 8px;
+      padding: 12px 60px 20px 40px;
       background-color: $color-background-main;
       order: 3;
     }
 
     &--application {
-      padding: 45px 60px;
+      padding: 30px 60px;
       background-color: $color-background-main;
       order: 2;
     }
 
     &--emotion {
-      padding: 47px 0 53px;
+      margin-top: 8px;
+      padding: 47px 0 42px;
       background-color: $color-background-main;
       order: 5;
     }
@@ -356,19 +392,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 29px;
   }
 
   .form__contact-input {
     flex-direction: column;
+    margin-bottom: 7px;
 
     &:after {
       content: "";
       position: absolute;
       right: 0px;
-      top: 0px;
+      top: 6px;
       display: block;
-      width: 60px;
-      height: 60px;
+      width: 62px;
+      height: 62px;
       background-color: $color-table-border;
       background-position: 50% 50%;
       background-repeat: no-repeat;
@@ -407,8 +446,16 @@
 
 
   .form__label {
+    &--for-text {
+      line-height: 2.14;
+      margin-left: 0px;
+      margin-top: 6px;
+    };
+
     &--for-contact {
       order: 2;
+      margin-left: 37px;
+      margin-top: 10px;
     }
 
     &--for-checkbox {
@@ -434,22 +481,38 @@
     }
   }
 
+  .form__achievements-input {
+    margin-bottom: 34px;
+  }
+
+  .form__application-input {
+    margin-bottom: 28px;
+  }
+
   .form__emotion-text {
     @include font(18px, $color-font-main-dark, normal);
     line-height: 1.67;
-
+    margin: -12px auto 10px;
     width: 496px;
-    height: 189px;
+    height: 192px;
 
-    padding: 18px;
+    padding: 16px 18px;
   }
 
   .form__submit {
-    margin: 30px 0 50px;
+    margin: 10px 0 50px;
     padding: 0 20px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .form__submit-buttom {
+    width: 302px;
+  }
+
+  .form__submit-hint {
+    margin-top: 25px;
   }
 }
 
@@ -462,7 +525,7 @@
   }
 
   .form__header {
-    margin: 100px 92px 60px;
+    margin: 15px 30px 30px;
   }
 
   .form__block {
@@ -483,7 +546,8 @@
   }
 
   .form__contact-input {
-    flex-grow: 1;
+    // flex-grow: 1;
+    width: 391px;
   }
 
   .form__achievements-input {
@@ -506,27 +570,44 @@
     &--achievements {
       background-color: $color-background-main;
       width: 936px;
+      padding: 30px 60px 25px;
+      margin-top: 8px;
     }
 
     &--contact {
       background-color: $color-background-main;
       width: 936px;
+      padding: 12px 60px 5px 40px;
+      margin-top: -20px;
     }
 
     &--application {
       background-color: $color-background-main;
       width: 431px;
+      margin-top: 10px;
+      padding: 30px 0px 1px 72px;
+      margin-bottom: 75px;
     }
 
     &--emotion {
+      margin-top: 8px;
       background-color: $color-background-main;
       width: 936px;
+      padding: 47px 0 40px;
     }
+  }
+
+  .form__legend-label{
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    width: 300px;
   }
 
   .form__emotion-text {
     width: 816px;
     height: 124px;
+
   }
 
 
@@ -536,5 +617,17 @@
 
   .form__submit-buttom {
     width: 296px;
+  }
+
+  .form__submit-hint {
+    margin-top: 20px;
+  }
+
+  .form__submit-hint-ex {
+    display: inline;
+  }
+
+  .form {
+    margin-bottom: -35px;
   }
 }
