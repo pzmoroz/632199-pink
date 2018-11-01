@@ -56,9 +56,7 @@
   .effect_block {
     width: $tablet-width;
 
-
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding: 58px 20px 30px;
   }
 
   .effect__timer {
@@ -91,11 +89,19 @@
     text-align: center;
     padding-top: 15px;
   }
+
+  .effect__wrapper {
+    margin-right: 10px;
+  }
+
+  .effect__desciption {
+
+    margin-top: 0px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .effect{
-
     display: block;
     background-color: $color-background-secondary;
   }
@@ -103,7 +109,7 @@
   .effect_block {
     width: $desktop-width;
     background-color: $color-background-secondary;
-    padding: 110px 130px 67px;
+    padding: 25px 130px 67px;
   }
 
   .effect__timer {
@@ -136,5 +142,31 @@
     @include font(120px, $color-font-red, bold);
     text-align: center;
     padding-top: 20px;
+  }
+
+  .effect__wrapper {
+    margin-left: 65px;
+    margin-top: 13px;
+  }
+
+  .effect__title {
+    br {
+      display: none;
+    }
+  }
+
+  .effect__desciption {
+    display: block;
+    @include font(18px, $color-font-main-dark, 400);
+    line-height: 1.67;
+    text-align: left;
+  }
+
+  .effect_link{
+    display: block;
+    @include font(18px, $color-font-red, 400);
+    text-align: left;
+    text-decoration: none;
+    //margin-top: 20px;
   }
 }

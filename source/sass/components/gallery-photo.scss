@@ -6,15 +6,11 @@
 .gallery-photo__wrapper {
   background-color: $color-background-secondary;
   margin: 0 20px 20px 20px;
-  padding: 25px 20px 20px 20px;
+  padding: 20px 17px 20px;
 }
 
-
-.gallery-photo__image {
-  display: block;
-  margin: 0 auto;
-
-  &--panorama-of-the-day ~ div {
+.gallery-photo__link {
+  &--panorama-of-the-day {
     &:after{
       content: "Панорама дня";
       box-sizing: border-box;
@@ -24,51 +20,41 @@
       top: 0;
       right: 20px;
 
-      @include font(12px, $color-font-main-light, normal);
+      @include font(12px, $color-font-main-light, 400);
       text-transform: uppercase;
 
       width: 140px;
       height: 36px;
       background-color: $color-red;
+      z-index: 4;
     }
   }
-
 }
 
-// .gallery-photo__image--panorama-of-the-day ~ div {
-//   &:after{
-//     content: "Панорама дня";
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-
-//     @include font(12px, $color-font-main-light, normal);
-//     text-transform: uppercase;
-
-//     width: 140px;
-//     height: 36px;
-//     background-color: $color-red;
-//   }
-// }
+.gallery-photo__image {
+  display: block;
+  margin: 0 auto;
+}
 
 .gallery-photo__autor {
   @include font(14px, $color-font-main-darkest, bold);
-  line-height: 24px;
+  line-height: 1;
   margin: 0;
   padding: 0;
   order: 1;
-
 }
 
 .gallery-photo__time-ago {
   @include font(12px, $color-font-main-dark, normal);
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .gallery-photo__description {
   @include font(14px, $color-font-main-dark, normal);
-  line-height: 24px;
+  line-height: 1.75;
   order: 2;
+  margin-top: -1px;
 }
 
 .gallery-photo__like-block {
@@ -76,6 +62,7 @@
   flex-direction: row;
   align-items: center;
   order: 3;
+  margin-top: -5px;
 }
 
 .gallery-photo__like-button {
@@ -90,7 +77,7 @@
 .gallery-photo__like-counter {
   display: block;
   @include font(12px, $color-font-red, normal);
-  text-transform: capitalize;
+  text-transform: uppercase;
   line-height: 2;
   margin: 0;
   padding: 0 0 0 19px;
@@ -102,22 +89,40 @@
     flex-wrap: wrap;
   }
 
+  .gallery-photo__link {
+    &--panorama-of-the-day {
+      &:after{
+        content: "Панорама дня";
+        top: 60px;
+      }
+    }
+  }
+
   .gallery-photo__wrapper {
-    height: 155px;
+    min-height: 155px;
     box-sizing: border-box;
-    margin: 0 0px 50px 0px;
+    margin: 0px 0px 20px 0px;
+    padding: 25px 27px 20px;
     display: flex;
     flex-direction: column;
 
     &--panorama {
-      height: 121px;
-      margin: 0 20px 50px 20px;
+      min-height: 121px;
+      //margin: 5px 25px 50px 30px;
+      margin: 0 20px 50px;
+      padding: 25px 20px 10px 30px;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
     }
   }
+
+  .gallery-photo__like-block {
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
 
   .gallery-photo__wrapper--panorama .gallery-photo__like-block{
     order: 2;
@@ -131,10 +136,6 @@
     margin-right: 17px;
   }
 
-  .gallery-photo__like-block {
-    justify-content: space-between;
-    margin-top: auto;
-  }
 
   .gallery-photo__like-button {
     order: 2;
@@ -160,25 +161,6 @@
         top: 57px;
       }
     }
-
-    // &--car {
-    //   background: url("../img/photo-car-tablet@1x.jpg") no-repeat;
-    // }
-    // &--drums {
-    //   background: url("../img/photo-drumset-tablet@1x.jpg") no-repeat;
-    // }
-    // &--windows {
-    //   background: url("../img/photo-window-tablet@1x.jpg") no-repeat;
-    // }
-    // &--cuban {
-    //   background: url("../img/photo-fair-tablet@1x.jpg") no-repeat;
-    // }
-    // &--legs {
-    //   background: url("../img/photo-pov-tablet@1x.jpg") no-repeat;
-    // }
-    // &--plane {
-    //   background: url("../img/photo-wing-tablet@1x.jpg") no-repeat;
-    // }
   }
 
 
@@ -187,8 +169,30 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .gallery-photo__wrapper {
-    margin: 0 0px 50px 0px;
+    min-height: 155px;
+    margin: 0px 0px 55px 0px;
+    padding: 25px 27px 20px;
+
+    &--panorama {
+      min-height: 95px;
+      //margin: 5px 25px 50px 30px;
+      margin: 0 0px 50px 0px;
+      padding: 25px 25px 10px;
+    }
+
+
+  }
+
+  .gallery-photo__link {
+    &--panorama-of-the-day {
+      &:after{
+        content: "Панорама дня";
+        top: 55px;
+        right: 10px;
+      }
+    }
   }
 
   .gallery-photo__image {
@@ -197,6 +201,7 @@
     &--panorama-of-the-day {
       width: 1200px;
       height: 506px;
+      margin: 0 auto;
       margin-left: -130px;
     }
   }

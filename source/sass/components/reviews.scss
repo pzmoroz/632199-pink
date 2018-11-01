@@ -1,13 +1,17 @@
 .reviews {
   background-color: $color-background-main;
-  padding-top: 45px;
-  padding-bottom: 55px;
+  padding: 30px 0px 42px;
   display: flex;
   flex-direction: column;
 }
 
 .reviews__wrapper {
   position: relative;
+}
+
+.reviews__list {
+  @include reset-list();
+  margin-bottom: 18px;
 }
 
 .reviews__item {
@@ -18,6 +22,10 @@
     flex-direction: column;
   }
 
+  h3 {
+    line-height: 0.8;
+  }
+  padding: 0 20px;
 }
 
 .reviews__author {
@@ -35,7 +43,7 @@
 
 .reviews__text {
   @include font(14px, $color-font-main-dark, normal);
-  line-height: 2.14;
+  line-height: 2.20;
   text-align: center;
   order: 2;
 }
@@ -47,12 +55,12 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding-top: 50px;
-    padding-bottom: 55px;
+    padding-bottom: 23px;
   }
   .reviews__author {
     order: 2;
     @include font(20px, $color-font-main-darkest, bold);
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 0;
   }
   .reviews__author-description {
@@ -72,12 +80,12 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-top: 190px;
-    padding-bottom: 35px;
+    padding-top: 168px;
+    padding-bottom: 23px;
   }
 
   .reviews__list {
-    width: 720px;
+    width: 730px;
     margin: 0 auto;
     position: relative;
 
@@ -86,8 +94,8 @@
       width: 79px;
       height: 69px;
       position: absolute;
-      top: -121px;
-      left: 360px;
+      top: -95px;
+      left: 325px;
       opacity: 0.1;
       background-image: url("../img/icon-quotes.svg");
       background-repeat: no-repeat;
@@ -105,13 +113,13 @@
   .reviews__author-description {
     display: block;
     @include font(18px, $color-font-main-dark, normal);
-    line-height: 1.67;
+    line-height: 1.27;
     order: 3;
   }
 
   .reviews__toggles {
     position: absolute;
-    top: -210px;
+    top: -157px;
   }
 
 }

@@ -4,6 +4,7 @@
   min-width: $mobile-width;
   height: 284px;
   box-sizing: border-box;
+  z-index: 3;
 
   &--main {
     display: none;

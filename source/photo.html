@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -64,11 +68,17 @@
         </header>
         <ul class="gallery__list">
           <li class="gallery__list-item gallery-photo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-              <img class="gallery-photo__image gallery-photo__image--panorama gallery-photo__image--panorama-of-the-day" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" alt="панорама" width="320" height="137">
-            </picture>
+            <a class="gallery-photo__link gallery-photo__link--panorama-of-the-day" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/panorama-mobile.webp 1x, img/panorama-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img class="gallery-photo__image gallery-photo__image--panorama gallery-photo__image--panorama-of-the-day" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" alt="панорама" width="320" height="137">
+              </picture>
+            </a>
             <div class="gallery-photo__wrapper gallery-photo__wrapper--panorama">
               <p class="gallery-photo__autor">Анна <span class="gallery-photo__time-ago">(5 минут назад)</span></p>
               <p class="gallery-photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -79,11 +89,17 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-              <img class="gallery-photo__image gallery-photo__image--car" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg" alt="машина" width="280" height="180">
-            </picture>
+            <a class="gallery-photo__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-car-mobile.webp 1x, img/photo-car-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="gallery-photo__image gallery-photo__image--car" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg" alt="машина" width="280" height="180">
+              </picture>
+            </a>
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Левон <span class="gallery-photo__time-ago">(5 часов назад)</span></p>
               <p class="gallery-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -94,11 +110,17 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-              <img class="gallery-photo__image gallery-photo__image--drums" src="img/photo-drumset-mobile@1x.jpg" alt="барабаны" width="280" height="180">
-            </picture>
+            <a class="gallery-photo__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-drumset-mobile.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="gallery-photo__image gallery-photo__image--drums" src="img/photo-drumset-mobile@1x.jpg" alt="барабаны" width="280" height="180">
+              </picture>
+            </a>
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Антон <span class="gallery-photo__time-ago">(12 часов назад)</span></p>
               <p class="gallery-photo__description">Соседи будут рады!</p>
@@ -109,12 +131,18 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-              <img class="gallery-photo__image gallery-photo__image--windows" src="img/photo-window-mobile@1x.jpg" alt="окно" width="280" height="180">
-            </picture>
-            <div class="gallery-photo__wrapper">
+            <a class="gallery-photo__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-window-mobile.webp 1x, img/photo-window-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="gallery-photo__image gallery-photo__image--windows" src="img/photo-window-mobile@1x.jpg" alt="окно" width="280" height="180">
+              </picture>
+            </a>
+            <div class="gallery-photo__wrapper gallery-photo__wrapper--panarama">
               <p class="gallery-photo__autor">Борис <span class="gallery-photo__time-ago">(20 часов назад)</span></p>
               <p class="gallery-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="gallery-photo__like-block">
@@ -124,11 +152,17 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-              <img class="gallery-photo__image gallery-photo__image--cuban" src="img/photo-fair-mobile@1x.jpg" alt="кубанская бахча" width="280" height="180">
-            </picture>
+            <a class="gallery-photo__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-fair-mobile.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="gallery-photo__image gallery-photo__image--cuban" src="img/photo-fair-mobile@1x.jpg" alt="кубанская бахча" width="280" height="180">
+              </picture>
+            </a>
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Сергей <span class="gallery-photo__time-ago">(25 часов назад)</span></p>
               <p class="gallery-photo__description">Самая кубанская в мире!</p>
@@ -139,11 +173,17 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-              <img class="gallery-photo__image gallery-photo__image--legs" src="img/photo-pov-mobile@1x.jpg" alt="ноги" width="280" height="180">
-            </picture>
+            <a class="gallery-photo__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-pov-mobile.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="gallery-photo__image gallery-photo__image--legs" src="img/photo-pov-mobile@1x.jpg" alt="ноги" width="280" height="180">
+              </picture>
+            </a>
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Максим <span class="gallery-photo__time-ago">(40 часов назад)</span></p>
               <p class="gallery-photo__description">Где снег-то?</p>
@@ -154,11 +194,17 @@
             </div>
           </li>
           <li class="gallery__list-item gallery-photo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-              <img class="gallery-photo__image gallery-photo__image--plane" src="img/photo-wing-mobile@1x.jpg" alt="самолет" width="280" height="180">
-            </picture>
+            <a class="gallery-photo__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-wing-mobile.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="gallery-photo__image gallery-photo__image--plane" src="img/photo-wing-mobile@1x.jpg" alt="самолет" width="280" height="180">
+              </picture>
+            </a>
             <div class="gallery-photo__wrapper">
               <p class="gallery-photo__autor">Надежда <span class="gallery-photo__time-ago">(45 часов назад)</span></p>
               <p class="gallery-photo__description">Всем GM и взаимные лайки!</p>
@@ -176,6 +222,10 @@
         </header>
         <div class="upload__wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet.webp 1x, img/photo-road-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-road-mobile.webp 1x, img/photo-road-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
             <img class="upload__image" alt="загруженное фото" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" width="280" height="384">
@@ -191,7 +241,7 @@
                   </svg>
                   <span class="visually-hidden">Изменить размер</span>
                 </button>
-                <div class="upload__scale-slider">
+                <div class="upload__scale-slider upload__scale-slider--active">
                   <div class="upload__scale"></div>
                   <div class="upload__slider upload__slider--resize"></div>
                 </div>
@@ -297,6 +347,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

@@ -97,10 +97,15 @@
 }
 
 .social__copyright-text {
-  @include font(18px, $color-font-main-dark, normal);
+  @include font(14px, $color-font-main-dark, normal);
   display: inline-block;
   vertical-align: top;
-  padding-top: 3px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    padding-top: 3px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 5px;

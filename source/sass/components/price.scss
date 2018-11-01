@@ -1,13 +1,10 @@
 .price {
-
-  background-color: $color-background-secondary;
-  height: 534px;
-  padding-top: 159px;
+  height: 470px;
+  padding-top: 90px;
   box-sizing: border-box;
 
-  // background-image: url("../img/bg-triangle-white.svg");
-  // background-repeat: no-repeat;
-  // background-size: cover 50px;
+  position: relative;
+  @include triangle($height: 25px, $top: 0);
 }
 
 .price__wrapper{
@@ -43,7 +40,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 276px;
+  width: 278px;
   padding-top: 94px;
   position: relative;
 }
@@ -51,9 +48,10 @@
 .price__header {
   position: absolute;
 
-  height: 94px;
-  width: 276px;
+  height: 98px;
+  width: 278px;
   &--name {
+    text-transform: uppercase;
     border-left: solid 2px $color-table-border;
     background-color: $color-header;
     box-sizing: border-box;
@@ -64,9 +62,9 @@
     @include font(18px, $color-font-main-light, bold);
   };
   &--value, {
-    top: 50px;
+    top: 45px;
     left: 89px;
-    @include font(24px, $color-font-main-light, normal);
+    @include font(24px, $color-font-main-light, 300);
   };
   &--popularity {
     //position: relative;
@@ -103,8 +101,8 @@
 }
 
 .price__cell {
-  width: 276px;
-  height: 59px;
+  width: 278px;
+  height: 63px;
   border-bottom: solid 2px $color-table-border;
   border-left: solid 2px $color-table-border;
   background-color: $color-background-main;
@@ -124,7 +122,7 @@
     display: block;
     z-index: 10;
     position: absolute;
-    left: 572px;
+    left: 577px;
     text-transform: uppercase;
   }
 
@@ -135,22 +133,31 @@
     font-size: 0;
     background-image: url("../img/icon-yes.svg");
     background-size: 31px 21px;
-    background-position-x: 90%;
+    background-position: 93% 60%;
   };
 
   &--false {
     font-size: 0;
     background-image: url("../img/icon-no.svg");
     background-size: 27px 26px;
-    background-position-x: 90%;
+    background-position: 92% 45%;
+
   };
 }
 
 .price__toggles {
-  margin: 45px auto 0;
+  margin: 40px auto 0;
 }
 
 @media (min-width: $tablet-width) {
+  .price {
+    height: 375px;
+    padding-top: 87px;
+
+    position: relative;
+    @include triangle($height: 50px, $top: 0);
+  }
+
   .price__table {
     overflow: visible;
     width: $tablet-width;
@@ -164,15 +171,12 @@
   }
 
   .price__data {
-    width: 152px;
+    width: 155px;
     padding-top: 75px;
-    &--header {
-
-    }
   }
   .price__header {
-    width: 152px;
-    height: 75px;
+    width: 155px;
+    height: 79px;
 
     &--name {
       padding-top: 16px;
@@ -180,14 +184,8 @@
     }
 
     &--value, {
-      top: 44px;
+      top: 40px;
       left: 40px;
-      @include font(18px, $color-font-main-light, normal);
-    }
-
-    &--currency {
-      top: 44px;
-      left: 80px;
       @include font(18px, $color-font-main-light, normal);
     }
 
@@ -210,8 +208,8 @@
     }
   }
   .price__cell {
-    height: 45px;
-    width: 152px;
+    height: 49px;
+    width: 155px;
 
     &--column-name {
       padding: 0 15px;
@@ -239,6 +237,14 @@
   }
 }
 @media (min-width: $desktop-width) {
+  .price {
+    height: 527px;
+    padding-top: 148px;
+
+    position: relative;
+    @include triangle($height: 82px, $top: 0);
+  }
+
   .price__table {
     width: $desktop-width;
   }
@@ -248,7 +254,7 @@
   }
 
   .price__data {
-    width: 233px;
+    width: 235px;
     padding-top: 94px;
     &--header {
 
@@ -256,8 +262,8 @@
   }
 
   .price__header {
-    width: 233px;
-    height: 94px;
+    width: 235px;
+    height: 97px;
 
     &--name {
       padding-top: 20px;
@@ -265,15 +271,9 @@
     }
 
     &--value, {
-      top: 50px;
+      top: 45px;
       left: 68px;
-      @include font(24px, $color-font-main-light, normal);
-    }
-
-    &--currency {
-      top: 50px;
-      left: 120px;
-      @include font(24px, $color-font-main-light, normal);
+      @include font(24px, $color-font-main-light, 300);
     }
 
     &--popularity{
@@ -296,8 +296,8 @@
   }
 
   .price__cell {
-    height: 59px;
-    width: 233px;
+    height: 63px;
+    width: 235px;
 
     &--column-name {
       padding: 0 24px;

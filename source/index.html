@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/opensans1.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="css/style.min.css">
-    <!-- <link rel="stylesheet" href="css/outline.css"> -->
   </head>
   <body>
     <div style="display: none;">
@@ -63,7 +65,7 @@
           <div class="download__block">
             <h2 class="download__slogan">Взгляните на жизнь иначе!</h2>
             <a class="download__link" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8">
-              <button class="download__link-button">Скачать приложение</button>
+              Скачать приложение
             </a>
             <ul class="download__list">
               <li class="download__list-item download__list-item--apple">
@@ -84,15 +86,14 @@
         <h2 class="visually-hidden">Информация программе</h2>
         <div class="main-features__block--header">
           <header class="main-features__header">
-            <p class="main-features__statement">Устали от серости мегаполиса?</p>
-            <p class="main-features__statement">Нам есть, что вам предложить!</p>
+            <p class="main-features__statement">Устали от серости мегаполиса?<br> Нам есть, что вам<br> предложить!</p>
           </header>
         </div>
         <div class="main-features__block--list">
           <ul class="main-features__list">
             <li class="main-features__list-item">
               <h3 class="main-features__title">Поднимает настроение</h3>
-              <p class="main-features__description">Приложение позволит вам победить осеннюю</p>
+              <p class="main-features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="main-features__list-item">
               <h3 class="main-features__title">Меняет мир вокруг</h3>
@@ -109,11 +110,11 @@
         <div class="effect_block">
           <!-- <img class="effect__timer" src="img/icon-timer.svg"> -->
           <div class="effect__timer">
-            <img class="effect__timer-img" src="img/icon-timer.svg" width="238" height="276">
+            <img class="effect__timer-img" src="img/icon-timer.svg" width="238" height="276" alt="Таймер">
             <div class="effect__timer-value">24</div>
           </div>
           <div class="effect__wrapper">
-            <h2 class="effect__title">Эффект на 24 часа!</h2>
+            <h2 class="effect__title">Эффект<br> на 24 часа!</h2>
             <p class="effect__desciption">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="effect_link" href="#">Узнать больше об исследовании</a>
           </div>
@@ -162,15 +163,15 @@
                 </tr>
                 <tr class="price__data slider__item">
                   <td class="price__header price__header--name">База</td>
-                  <td class="price__header price__header--value">1.99 USD</td>
+                  <td class="price__header price__header--value">1,99 USD</td>
                   <td class="visually-hidden">Стандартный</td>
                   <td class="price__cell price__cell--true">есть</td>
-                  <td class="price__cell price__cell--true">нет</td>
+                  <td class="price__cell price__cell--false">нет</td>
                   <td class="price__cell price__cell--false">нет</td>
                 </tr>
                 <tr class="price__data slider__item">
                   <td class="price__header price__header--name">Стандарт</td>
-                  <td class="price__header price__header--value">3.99 USD</td>
+                  <td class="price__header price__header--value">3,99 USD</td>
                   <td class="price__header price__header--popularity">Хит</td>
                   <td class="price__cell price__cell--true">есть</td>
                   <td class="price__cell price__cell--true">есть</td>
@@ -178,11 +179,11 @@
                 </tr>
                 <tr class="price__data slider__item">
                   <td class="price__header price__header--name">Анлим</td>
-                  <td class="price__header price__header--value">9.99 USD</td>
+                  <td class="price__header price__header--value">9,99 USD</td>
                   <td class="visually-hidden">Стандартный</td>
                   <td class="price__cell price__cell--true">есть</td>
                   <td class="price__cell price__cell--true">есть</td>
-                  <td class="price__cell price__cell--false">есть</td>
+                  <td class="price__cell price__cell--true">есть</td>
                 </tr>
               </tbody>
             </table>
@@ -200,22 +201,24 @@
           <div class="contacts__wrapper page-main__block">
             <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
             <ul class="contacts__interaction-list">
-              <li class="contacts__interaction-list-item">
+              <li class="contacts__interaction-list-item contacts__interaction-list-item--phone">
                 <p class="contacts__label">Звоните:</p>
-                <p class="contacts__data">+7(812)555-66-66</p>
+                <p class="contacts__data">+7 (812)555-66-66</p>
               </li>
-              <li class="contacts__interaction-list-item">
+              <li class="contacts__interaction-list-item contacts__interaction-list-item--email">
                 <p class="contacts__label">Пишите:</p>
                 <p class="contacts__data contacts__data--email">mail@htmlacademy.ru</p>
               </li>
-              <li class="contacts__interaction-list-item">
+              <li class="contacts__interaction-list-item contacts__interaction-list-item--adress">
                 <p class="contacts__label">Приезжайте в гости:</p>
                 <p class="contacts__data">ул. Большая Конюшенная, 19/8 </p>
               </li>
             </ul>
           </div>
         </div>
-
+        <div class="contacts__map">
+          <div class="address-map"></div>
+        </div>
       </section>
     </main>
     <footer class="page-footer page-footer--main">
@@ -281,6 +284,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
