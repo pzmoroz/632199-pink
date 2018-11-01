@@ -16,26 +16,28 @@
   }
 }
 
-.main-features__list {
-}
-
 .main-features__header {
   width: $mobile-width;
   margin: 0 auto;
   text-align: center;
-  padding: 40px;
+  padding: 20px 40px 0;
   box-sizing: border-box;
+
+
 }
 
 .main-features__statement {
-  @include font(24px, $color-font-main-dark, normal);
+  @include font(24px, $color-font-main-dark, 300);
+  line-height: 1.2;
+
 }
 
 
 .main-features__list {
   @include reset-list();
   width: $mobile-width;
-  padding-bottom: 300px;
+  padding-top: 70px;
+  padding-bottom: 278px;
   margin: 0 auto;
 
   box-sizing: border-box;
@@ -60,17 +62,34 @@
   @include font(14px, $color-font-main-dark, normal);
   line-height: 1.71;
   text-align: center;
+  padding: 0 20px;
+}
+
+.main-features__list-item {
+  margin-bottom: 40px;
+  h3 {
+    line-height: 0.8
+    ;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-features__header {
     width: $tablet-width;
-    padding: 59px;
+    padding: 0;
+    padding-top: 7px;
+    margin-bottom: 48px;
+  }
+
+  .main-features__statement {
+    @include font(40px, $color-font-main-darkest, 300);
+    line-height: 1.2;
   }
 
   .main-features__block {
     &--list {
       @include triangle($height: 51px, $top: 0);
+      padding-bottom: 1px;
     }
   }
 
@@ -78,27 +97,54 @@
     width: $tablet-width;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: 0% 0%;
-    padding-left: 300px;
+    background-position: 20px 3px;
+    padding-left: 320px;
     padding-top: 60px;
     padding-bottom: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-3-tablet@2x.png");
       background-size: 268px 547px;
-      background-position: 0% 0%;
+      background-position: 20px 0%;
     }
+  }
+
+  .main-features__title {
+    text-align: left;
+    margin-left: 8px;
+  }
+
+  .main-features__description {
+    text-align: left;
+    line-height: 1.75;
+    margin-left: -12px;
   }
 }
 
+
+
 @media (min-width: $desktop-width) {
+
   .main-features__header {
     width: $desktop-width;
+    padding: 0;
+    padding-top: 15px;
+    margin-bottom: 80px;
   }
+
+  .main-features__statement {
+    @include font(50px, $color-font-main-darkest, 300);
+    line-height: 1.2;
+  }
+
 
   .main-features__block {
     &--list {
-      @include triangle($height: 74px, $top: 0);
+      @include triangle($height: 92px, $top: 0);
+      margin-top: -2px;
     }
   }
 
@@ -110,14 +156,37 @@
     background-image: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .main-features__list-item {
-    width: 300px;
-    padding-top: 350px;
+    box-sizing: border-box;
+    width: 322px;
+    padding: 350px 20px 0;
     background-repeat: no-repeat;
     background-position: 50% 0;
+    h3 {
+      line-height: 1
+      ;
+    }
+  }
+
+  .main-features__title {
+    @include font(30px, $color-font-main-darkest, 700);
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0 30px;
+    line-height: 1.71;
+  }
+
+  .main-features__description {
+    @include font(18px, $color-font-main-dark, 400);
+    line-height: 1.71;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0;
+    margin-top: 20px;
   }
 
   .main-features__list-item:nth-child(1) {

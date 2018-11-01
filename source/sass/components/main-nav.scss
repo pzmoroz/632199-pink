@@ -12,7 +12,7 @@
 
   position: absolute;
   top: -60px;
-  right: 20px;
+  right: -5px;
   z-index: 11;
   font-size: 0;
 
@@ -96,7 +96,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 63px;
+  height: 65px;
+  box-sizing: border-box;
   a {
     @include font(18px, $color-font-main-light, bold);
     text-transform: uppercase;
@@ -124,6 +125,11 @@
   .main-nav__toggle {
     top: -80px;
   }
+
+  .main-nav__list-item {
+    height: 64px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
