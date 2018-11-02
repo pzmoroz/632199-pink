@@ -39,6 +39,7 @@
 
 .upload__action {
   @include reset-button();
+  cursor: pointer;
 
   //opacity: 0.3;
   &--resize {
@@ -56,18 +57,27 @@
     height: 32px;
     //background-image: url("../img/icon-editor-contrast.svg");
   }
-}
 
-.upload__action-icon {
-  fill: rgba($color-blue-dark, 0.3);
-  cursor: pointer;
-
-  &--active {
-    fill: $color-red;
+  & .upload__action-icon {
+    fill: rgba($color-blue-dark, 0.3);
   }
 
   &:hover {
-    fill: rgba($color-blue-dark, 0.5);
+    .upload__action-icon {
+      fill: rgba($color-blue-dark, 0.5);
+    }
+  }
+
+  &:active {
+    .upload__action-icon {
+      fill: $color-red;
+    }
+  }
+
+  &--active {
+    .upload__action-icon {
+      fill: $color-red;
+    }
   }
 }
 
@@ -260,7 +270,7 @@
   }
 
   .upload__action-icon {
-    fill: $color-red;
+    // fill: $color-red;
 
     &--resize {
       width: 24px;
