@@ -204,6 +204,12 @@
   }
 }
 
+.form__intput-checkbox:focus + .form__label--for-checkbox {
+  &:after {
+    border: 2px solid $color-blue-dark;
+  }
+}
+
 .form__intput-text {
   @include font(18px, $color-font-main-dark, normal);
   line-height: 1.67;
